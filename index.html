@@ -7,14 +7,7 @@
     <title>Ortalama Hesaplama</title>
     <link rel="stylesheet" href="deneme.css">
     <script src="deneme.js"></script>
-<meta name='apple-mobile-web-app-capable' content='yes'>
-<meta name='apple-mobile-web-app-status-bar-style' content='#FBFBFB'>
-<meta name='apple-mobile-web-app-title' content='SHOW YAZILIM'>
-<meta name='msapplication-TileImage' content='/pwa_app.png'>
-<meta name='msapplication-TileColor' content='#FBFBFB'>
-<link rel='manifest' href='/manifest.json'>
-<link rel='apple-touch-icon' href='/pwa_app.png'>
-	<link rel="manifest" href="/manifest.json">
+<link rel="manifest" href="/manifest.json">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="prototurk.com">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -30,20 +23,12 @@
 <link rel="icon" sizes="192x192" href="/pwa/img/192x192.png">
 <link rel="icon" sizes="128x128" href="/pwa/img/128x128.png">
 <script>
-  if ('serviceWorker' in navigator) {
-	window.addEventListener('load', function () {
-	navigator.serviceWorker.register('service-worker.js').then(function (registration) {
-	 console.log('Registered!');
-	 }, function (err) {
-	  console.log('ServiceWorker kaydı başarısız: ', err);
-	}).catch(function (err) {
-	 console.log(err);
-	 });
-	});
-	 } else {
-  console.log('ServiceWorker desteklenmiyor!');
- }
-</script>	
+        if ('serviceWorker' in navigator) {
+        	window.addEventListener('load', function () {
+        		navigator.serviceWorker.register('/sw.js?v=3');
+        	});
+        }
+    </script>	
 </head>
 <body>
 <div class="genel">

@@ -23,9 +23,14 @@
 <link rel="apple-touch-icon-precomposed" sizes="128x128" href="">
 <link rel="icon" sizes="192x192" href="">
 <link rel="icon" sizes="128x128" href="">
+     <script>
+        if ('serviceWorker' in navigator) {
+        	window.addEventListener('load', function () {
+        		navigator.serviceWorker.register('/sw.js?v=3');
+        	});
+        }
+    </script>
 </head>
-<link rel="manifest" href="https://ortalamahesap.vercel.app/manifest.json">
-<link rel="apple-touch-icon" href="https://ortalamahesap.vercel.app/">
 <body>
 <div class="genel">
     <h3>Ortalam Hesaplama</h3>
@@ -73,19 +78,4 @@
     </div>
 </div>
 <p class="beta">Ortalama Hesaplama 1.0 Beta</p>
-    <script>
- if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function () {
-   navigator.serviceWorker.register('service-worker.js').then(function (registration) {
-    console.log('Registered!');
-   }, function (err) {
-    console.log('ServiceWorker registration failed: ', err);
-   }).catch(function (err) {
-    console.log(err);
-   });
-  });
- } else {
-  console.log('service worker is not supported');
- }
-</script>
 </html>

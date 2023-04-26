@@ -14,8 +14,8 @@ const CACHE_NAME = 'my-cache';
 const FILES_TO_CACHE = [
   '/',
   '/index.html',
-  '/css/deneme.css',
-  '/js/deneme.js'
+  '/css/style.css',
+  '/js/app.js'
 ];
 
 self.addEventListener('install', (event) => {

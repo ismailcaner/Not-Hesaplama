@@ -8,7 +8,7 @@ self.addEventListener('fetch', function (event) {
     console.log('Fetch!', event.request);
 });
 
-importScripts('https://cdn.ampproject.org/sw/amp-sw.js');
+importScripts('https://ortalamahesap.vercel.app/sw/amp-sw.js');
 AMP_SW.init({
 assetCachingOptions: [{
 regexp: /\.(png|jpg)/,

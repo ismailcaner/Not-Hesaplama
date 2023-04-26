@@ -17,7 +17,6 @@ input{
     background-color: rgb(230, 230, 230);
     outline: none;
     caret-color: transparent;
-    cursor:default;
 }
 input:active{
     transform: scale(1.1);

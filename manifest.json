@@ -1,21 +1,41 @@
-{   
-"name": "Ortalama Hesaplama",
-   "description": "Ortalama Hesaplama",
-   "short_name": "Ortalama Hesaplama",
-   "icons": [
-      {
-         "src": "",
-         "sizes": "192x192",
-         "type": "image/png"
-      },
-      {
-         "src": "",
-         "sizes": "512x512",
-         "type": "image/png"
-      }
-   ],
-   "start_url": "/", 
-   "display": "standalone",
-   "theme_color": "#FBFBFB",
-   "background_color": "#FBFBFB"
+{
+  "name": "prototurk.com",
+  "short_name": "prototurk",
+  "icons": [
+    {
+      "src": "/pwa/img/36x36.png",
+      "sizes": "36x36",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa/img/48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa/img/72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa/img/96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa/img/144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa/img/192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#1f1f1f",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
 }

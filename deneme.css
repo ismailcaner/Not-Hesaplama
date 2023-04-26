@@ -16,7 +16,6 @@ input{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
     background-color: rgb(230, 230, 230);
     outline: none;
-    caret-color: transparent;
 }
 input:active{
     transform: scale(1.1);

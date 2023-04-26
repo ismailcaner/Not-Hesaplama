@@ -7,6 +7,7 @@
     <title>Ortalama Hesaplama</title>
     <link rel="stylesheet" href="deneme.css">
     <script src="deneme.js"></script>
+	<script src
 <link rel="manifest" href="/manifest.json">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="prototurk.com">
@@ -22,6 +23,19 @@
 <link rel="apple-touch-icon-precomposed" sizes="128x128" href="/pwa/img/128x128.png">
 <link rel="icon" sizes="192x192" href="/pwa/img/192x192.png">
 <link rel="icon" sizes="128x128" href="/pwa/img/128x128.png">
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js')
+      .then(registration => {
+        console.log('Servis işçisi kaydedildi:', registration);
+      })
+      .catch(error => {
+        console.log('Servis işçisi kaydedilemedi:', error);
+      });
+  });
+}
+</script>
 	
 </head>
 <body>

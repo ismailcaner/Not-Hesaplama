@@ -2,7 +2,6 @@
 const CACHE_NAME = 'my-pwa-cache-v1';
 const urlsToCache = [
   '/',
-  '/ortalamahesap.vercel.app.deneme.html/'
   '/styles/deneme.css',
   '/scripts/deneme.js',
   '/images/logo.png'

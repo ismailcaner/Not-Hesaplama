@@ -2,8 +2,8 @@
 const CACHE_NAME = 'my-pwa-cache-v1';
 const urlsToCache = [
   '/',
-  '/styles/deneme',
-  '/scripts/deneme',
+  '/deneme.css',
+  '/deneme.js',
 ];
 
 // Önbelleğe alma işlemini gerçekleştirir

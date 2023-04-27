@@ -4,6 +4,7 @@ const urlsToCache = [
   '/',
   '/deneme.css',
   '/deneme.js',
+  '/manifest.json'
 ];
 
 // Önbelleğe alma işlemini gerçekleştirir

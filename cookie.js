@@ -1,6 +1,7 @@
 
 		function saveInputs() {
-			var inputs = document.getElementsByTagName("input");
+			var inputs = document.getElementsByClassName("deneme");
+			
 			for (var i = 0; i < inputs.length; i++) {
 				document.cookie = inputs[i].id + "=" + inputs[i].value + "; path=/";
 			}

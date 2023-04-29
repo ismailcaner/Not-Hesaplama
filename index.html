@@ -22,40 +22,6 @@
     <link rel="stylesheet" href="deneme.css">
     <script src="deneme.js"></script>
 <link rel="manifest" href="/manifest.json">
-	 <input type="text" id="myInput" oninput="saveInput()">
-
-    <script>
-      function saveInput() {
-        var inputVal = document.getElementById("myInput").value;
-        document.cookie = "savedInput=" + inputVal + "; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-      }
-
-      function readInput() {
-        var inputValue = getCookie("savedInput");
-        if (inputValue != "") {
-          document.getElementById("myInput").value = inputValue;
-        }
-      }
-
-      function getCookie(cname) {
-        var name = cname + "=";
-        var decodedCookie = decodeURIComponent(document.cookie);
-        var ca = decodedCookie.split(';');
-        for(var i = 0; i < ca.length; i++) {
-          var c = ca[i];
-          while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-          }
-          if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-          }
-        }
-        return "";
-      }
-
-      readInput(); // sayfa yüklendiğinde otomatik olarak çağrılır
-    </script>
-
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {

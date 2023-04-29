@@ -21,8 +21,8 @@
     <title>Not Hesaplama</title>
     <link rel="stylesheet" href="deneme.css">
     <script src="deneme.js"></script>
+	<script src="cookie.js"></script>
 <link rel="manifest" href="/manifest.json">
-	deneme
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
@@ -38,12 +38,12 @@ if ('serviceWorker' in navigator) {
 </script>
 	
 </head>
-<body>
+<body onload="loadInputs()">
 <div class="genel">
     <h3>Ortalam Hesaplama</h3>
        <p class="text 1">Veri Tabanı</p>
     <div class="veri">
-<input type="text" id="vrtvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" oninput="hesapla(); savedInput();">
+<input type="text" id="vrtvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" oninput="hesapla()">
 <input type="text" id="vrtfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final" oninput="hesapla()">
 <div class="sonuc" id="conclusion1"></div>
     </div>
@@ -84,5 +84,6 @@ if ('serviceWorker' in navigator) {
 <div class="sonuc" id="conclusion7"></div>  
     </div>
 </div>
+	<button onclick="saveInputs()">Kaydet</button>
 <p class="beta">Ortalama Hesaplama 1.0 Beta</p>
 </html>

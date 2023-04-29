@@ -43,7 +43,7 @@ if ('serviceWorker' in navigator) {
     <h3>Ortalam Hesaplama</h3>
        <p class="text 1">Veri Tabanı</p>
     <div class="veri">
-<input type="text" "id="vrtvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" onclick="hesapla(); saveInput();">
+<input type="text" "id="vrtvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" oninput="hesapla()">
 <input type="text" id="vrtfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final" oninput="hesapla()">
 <div class="sonuc" id="conclusion1"></div>
     </div>

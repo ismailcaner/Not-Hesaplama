@@ -8,11 +8,11 @@ function saveInput() {
 function readInput() {
   var inputVal = getCookie("savedInput");
   if (inputVal != "") {
-    document.getElementById("myInput").value = inputVal;
+    document.getElementById("vrtvize").value = inputVal;
   }
 }
 
-function getCookie(name) {
+function getCookie(savedInput) {
   var value = "; " + document.cookie;
   var parts = value.split("; " + name + "=");
   if (parts.length == 2) {

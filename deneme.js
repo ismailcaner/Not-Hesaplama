@@ -46,14 +46,3 @@ function hesapla() {
     document.getElementById("conclusion6").innerHTML = yuzde6;
     document.getElementById("conclusion7").innerHTML = yuzde7;
       }
-
-function saveData() {
-  const inputData = document.getElementById("vrtvize"); // input alanını alır
-  const inputValue = inputData.value; // inputtan değeri alır
-
-  // Süresiz çerez oluşturma
-  document.cookie = "myCookie=" + inputValue + "; expires=0; path=/";
-}
-function saveData() {
-  console.log("saveData çalıştı!");
-}

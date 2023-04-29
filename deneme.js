@@ -1,26 +1,3 @@
-function saveInput() {
-  var inputVal = document.getElementById("vrtvize").value;
-  var date = new Date();
-  date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000)); // çerezin son kullanma tarihi 1 yıl sonra
-  document.cookie = "savedInput=" + inputVal + "; expires=" + date.toUTCString() + "; path=/";
-}
-
-function readInput() {
-  var inputVal = getCookie("savedInput");
-  if (inputVal != "") {
-    document.getElementById("vrtvize").value = inputVal;
-  }
-}
-
-function getCookie(savedInput) {
-  var value = "; " + document.cookie;
-  var parts = value.split("; " + name + "=");
-  if (parts.length == 2) {
-    return parts.pop().split(";").shift();
-  }
-  return "";
-}
-
 function hesapla() {
     var vize1 = document.getElementById("vrtvize").value;
     var final1 = document.getElementById("vrtfinal").value;

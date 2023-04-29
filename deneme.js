@@ -1,3 +1,14 @@
+function saveData() {
+  const inputData = document.getElementById("vrtvize"); // input alanını alır
+  const inputValue = inputData.value; // inputtan değeri alır
+
+  // Süresiz çerez oluşturma
+  document.cookie = "myCookie=" + inputValue + "; expires=0; path=/";
+}
+function saveData() {
+  console.log("saveData çalıştı!");
+}
+
 function hesapla() {
     var vize1 = document.getElementById("vrtvize").value;
     var final1 = document.getElementById("vrtfinal").value;

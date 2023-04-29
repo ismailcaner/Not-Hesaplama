@@ -43,3 +43,6 @@ function saveData() {
   // Süresiz çerez oluşturma
   document.cookie = "myCookie=" + inputValue + "; expires=0; path=/";
 }
+function saveData() {
+  console.log("saveData çalıştı!");
+}

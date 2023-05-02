@@ -1,11 +1,17 @@
 // Önbellek adı
 const CACHE_NAME = 'cache v2';
+const urlsToCache = [
+  '/',
+  '/deneme.css',
+  '/deneme.js',
+  '/manifest.json'
+];
 
 // Web sayfası yüklendiğinde önbelleği açar ve ağdan en son veriyi alır
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(CACHE_NAME).then(function(cache) {
-      return cache.add('/');
+      return cache.addAll(urlsToCache);
     })
   );
 });

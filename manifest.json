@@ -28,8 +28,9 @@
       "type": "image/png"
     },
     {
-      "src": "/icon.png",
-      "sizes": "192x192",
+      
+      "src": "rounded-in-photoretrica.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],

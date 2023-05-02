@@ -1,51 +1,36 @@
-// Servis işçisi dosyası
-const CACHE_NAME = 'my-pwa-cache-v1';
-const urlsToCache = [
-  '/',
-  '/deneme.css',
-  '/deneme.js',
-  '/manifest.json'
-];
+// Önbellek adı
+const CACHE_NAME = 'cache v2';
 
-// Önbelleğe alma işlemini gerçekleştirir
+// Web sayfası yüklendiğinde önbelleği açar ve ağdan en son veriyi alır
 self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(function(cache) {
-        console.log('Önbellek açıldı');
-        return cache.addAll(urlsToCache);
-      })
+    caches.open(CACHE_NAME).then(function(cache) {
+      return cache.add('/');
+    })
   );
 });
 
-// Önbelleğe isteği yanıtlar
+// İstekleri işler ve önce ağdan veri almaya çalışır, daha sonra önbellekte veri varsa bu veriyi kullanır
 self.addEventListener('fetch', function(event) {
   event.respondWith(
-    caches.match(event.request)
+    fetch(event.request)
       .then(function(response) {
-        if (response) {
-          console.log('İstek önbellekten alındı: ', event.request.url);
-          return response;
-        }
-
-        console.log('Ağdan istek yapıldı: ', event.request.url);
-        return fetch(event.request);
+        // Ağ yanıtı varsa önbelleğe kaydet
+        const clonedResponse = response.clone();
+        caches.open(CACHE_NAME).then(function(cache) {
+          cache.put(event.request, clonedResponse);
+        });
+        return response;
       })
-  );
-});
-
-// Eski önbellekleri temizler
-self.addEventListener('activate', function(event) {
-  event.waitUntil(
-    caches.keys().then(function(cacheNames) {
-      return Promise.all(
-        cacheNames.filter(function(cacheName) {
-          return cacheName !== CACHE_NAME;
-        }).map(function(cacheName) {
-          console.log('Eski önbellek temizlendi: ', cacheName);
-          return caches.delete(cacheName);
-        })
-      );
-    })
+      .catch(function() {
+        // Ağ yanıtı yoksa önbellekten yanıtı al
+        return caches.match(event.request)
+          .then(function(response) {
+            if (response) {
+              return response;
+            }
+            throw new Error('No response found in cache.');
+          });
+      })
   );
 });

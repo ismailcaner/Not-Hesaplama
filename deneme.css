@@ -70,5 +70,6 @@ p.beta{
     text-align: right;
     font-style: italic;
     color: rgb(100, 100, 100);
-    position: fixed;
+    position: Absolute;
+    margin-buttom:0px ;
 }

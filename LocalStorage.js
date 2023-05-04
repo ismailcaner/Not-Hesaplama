@@ -1,23 +1,22 @@
-// Sayfa verilerini bir nesne içine topla
-var pageData = {
-  title: document.title,
-  content: document.body.innerHTML
-};
+// Sayfa verilerini kaydetmek için bir işlev tanımlayın
+function savePage() {
+  // Sayfa verilerini bir nesne içine toplayın
+  var pageData = {
+    title: document.title,
+    content: document.body.innerHTML
+  };
 
-// Yerel depolama alanına kaydet
-localStorage.setItem('pageData', JSON.stringify(pageData));
+  // Yerel depolama alanına kaydedin
+  localStorage.setItem('pageData', JSON.stringify(pageData));
 
-// Sayfa başlığını güncelle
-document.title = 'Yeni Sayfa Başlığı';
+  // Kullanıcıya geri bildirim verin
+  alert('Sayfa başarıyla kaydedildi!');
+}
 
-// Sayfa içeriğini güncelle
-document.body.innerHTML = '<p>Yeni Sayfa İçeriği</p>';
+// Kaydet düğmesi ekleyin
+var saveButton = document.createElement('button');
+saveButton.textContent = 'Kaydet';
+saveButton.addEventListener('click', savePage);
 
-// Kaydedilen verileri yerel depolama alanından yükle
-var savedData = JSON.parse(localStorage.getItem('pageData'));
-
-// Sayfa başlığını kaydedilenden geri yükle
-document.title = savedData.title;
-
-// Sayfa içeriğini kaydedilenden geri yükle
-document.body.innerHTML = savedData.content;
+// Düğmeyi sayfaya ekleyin
+document.body.appendChild(saveButton);

@@ -80,3 +80,10 @@ textarea{
     margin: 0px;
     outline: none;
    }
+.clear{
+    background-color: rgb(230, 230, 230);
+    border:none;
+    color:white;
+    text-align:center;
+    padding: 15px 30px;
+    }

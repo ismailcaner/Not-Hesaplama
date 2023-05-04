@@ -73,6 +73,6 @@ p.beta{
 }
 .footer{
     position:fixed;
-    margin-bottom: 0px;
-   display:flex;
+    bottom: 0;
 }
+   

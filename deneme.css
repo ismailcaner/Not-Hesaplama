@@ -74,6 +74,7 @@ p.beta{
 }
 textarea{
     border: 0px;
-    rows:1;
-    cols:10;
+    hight:25px
+    width:75px;
+    padding:0px;
    }

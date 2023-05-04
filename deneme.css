@@ -75,6 +75,7 @@ p.beta{
 textarea{
     border: 0px;
     height: 25px;
-    width: 100px;
+    width: 100%;
     padding:0px;
+    text-align: center;
    }

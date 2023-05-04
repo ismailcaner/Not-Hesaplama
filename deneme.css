@@ -72,7 +72,8 @@ p.beta{
     color: rgb(100, 100, 100);
 }
 .footer{
-    position:fixed;
+    position:absolute;
     bottom: 0;
+    text-align: right;
 }
    

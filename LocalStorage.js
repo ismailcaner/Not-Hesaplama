@@ -20,3 +20,19 @@ saveButton.addEventListener('click', savePage);
 
 // Düğmeyi sayfaya ekleyin
 document.body.appendChild(saveButton);
+
+// Sayfa yüklendiğinde çalışacak işlevi tanımlayın
+function loadPage() {
+  // Local storage'dan verileri alın
+  var pageData = localStorage.getItem('pageData');
+
+  // Veriler varsa, sayfa içeriğini yeniden oluşturun
+  if (pageData) {
+    pageData = JSON.parse(pageData);
+    document.title = pageData.title;
+    document.body.innerHTML = pageData.content;
+  }
+}
+
+// Sayfa yüklendiğinde loadPage işlevini çağırın
+window.addEventListener('load', loadPage);

@@ -98,3 +98,7 @@ textarea{
     border-radius: 5px;
     font-size: medium;
    }
+.btn{
+    align-item: center;
+    display: flex;
+    }

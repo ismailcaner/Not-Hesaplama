@@ -1,9 +1,7 @@
 function clear() {
-			document.getElementById("icerik").innerHTML = "";
+			document.getElementById("conclusion1").innerHTML = "";
 			document.getElementById("vrtvize").value = "";
 		}
-
-
 
 
 function hesapla() {

@@ -1,4 +1,4 @@
-function clear() {
+function clearElements() {
   var elements = document.getElementsByClassName("sonuc");
   for (var i = 0; i < elements.length; i++) {
     elements[i].value = "";

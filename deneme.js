@@ -1,6 +1,6 @@
 function clear() {
 			document.getElementById("icerik").innerHTML = "";
-			document.getElementsByTagName("input").value = "";
+			document.getElementsById("vrtvize").value = "";
 		}
 
 

@@ -1,3 +1,11 @@
+function clear() {
+			document.getElementById("icerik").innerHTML = "";
+			document.getElementsByTagName("input")[0].value = "";
+		}
+
+
+
+
 function hesapla() {
     var vize1 = document.getElementById("vrtvize").value;
     var final1 = document.getElementById("vrtfinal").value;

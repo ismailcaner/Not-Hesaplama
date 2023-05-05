@@ -1,9 +1,3 @@
-function clear() {
-			document.getElementById("conclusion1").innerHTML = "";
-			document.getElementById("vrtvize").value = "";
-		}
-
-
 function hesapla() {
     var vize1 = document.getElementById("vrtvize").value;
     var final1 = document.getElementById("vrtfinal").value;

@@ -89,3 +89,12 @@ textarea{
     border-radius: 5px;
     font-size: medium;
     }
+.save{
+    background-color: blue;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: medium;
+   }

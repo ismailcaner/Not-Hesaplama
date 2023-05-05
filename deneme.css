@@ -81,7 +81,7 @@ textarea{
     outline: none;
    }
 .clear{
-    background-color: rgb(230, 230, 230);
+    background-color: grey;
     border:none;
     color:white;
     text-align:center;

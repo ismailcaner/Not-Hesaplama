@@ -1,6 +1,7 @@
 {
   "name": "Not Hesaplama",
   "short_name": "Not Hesaplama",
+  "start_url": "/",
   "icons": [
     {
       
@@ -11,7 +12,7 @@
   ],
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
-  "start_url": "/",
+ 
   "display": "standalone",
   "orientation": "portrait"
 }

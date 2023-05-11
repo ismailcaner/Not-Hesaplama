@@ -20,13 +20,6 @@ function hesapla() {
     var yuzde5 = vize5 * 0.4 + final5 * 0.6;
     var yuzde6 = vize6 * 0.4 + final6 * 0.6;
     var yuzde7 = vize7 * 0.4 + final7 * 0.6;
-    var yuzde1 = yuzde1.toFixed(1);
-    var yuzde2 = yuzde2.toFixed(1);
-    var yuzde3 = yuzde3.toFixed(1);
-    var yuzde4 = yuzde4.toFixed(1);
-    var yuzde5 = yuzde5.toFixed(1);
-    var yuzde6 = yuzde6.toFixed(1);
-    var yuzde7 = yuzde7.toFixed(1);
     document.getElementById("conclusion1").innerHTML = yuzde1;
     document.getElementById("conclusion2").innerHTML = yuzde2;
     document.getElementById("conclusion3").innerHTML = yuzde3;

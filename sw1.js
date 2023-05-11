@@ -2,8 +2,8 @@
 const CACHE_NAME = 'cache v2';
 const urlsToCache = [
   '/',
-  '/deneme.css',
-  '/deneme.js',
+  '/style.css',
+  '/javascript.js',
   '/manifest.json'
 ];
 

@@ -41,54 +41,20 @@ if ('serviceWorker' in navigator) {
 	
 </head>
 <body>
-<div class="genel">
-    <div class="h3">
-            <h3>Not Hesaplama</h3>
-	</div>
-       <textarea class="text 1">Veri Tabanı</textarea>
-    <div class="veri">
-<input class="input" inputmode="numeric" type="text" id="vrtvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" oninput="hesapla()">
-<input class="input" inputmode="numeric" type="text" id="vrtfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final" oninput="hesapla()">
-<div class="sonuc" id="conclusion1"></div>
+</head>
+<div class="h3"><h3>Not Hesaplama</h3> </div>
+<body>
+  <div  id="lesson">
+    <div id="textname"><textarea placeholder="Ders Adı?" id="lessonname"></textarea></div>
+    <div class="inputs" id="inputs">
+      <input class="input" inputmode="numeric" type="text" id="Vize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" oninput="hesapla()">
+      <input class="input" inputmode="numeric" type="text" id="final" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final" oninput="hesapla()">
+         <div class="sonuc" id="conclusion"></div>
     </div>
-        <p class="text 2">İnternet Prog.</p>
-    <div class="veri" >
-<input class="input" inputmode="numeric" type="text" id="intpvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" oninput="hesapla()">
-<input class="input" inputmode="numeric" type="text" id="intpfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final" oninput="hesapla()">
-<div class="sonuc" id="conclusion2"></div>  
-    </div>
-    <p class="text 3">Görsel Prog.</p>
-    <div class="veri">
-<input class="input" inputmode="numeric" type="text" id="gorpvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" oninput="hesapla()">
-<input class="input" inputmode="numeric" type="text" id="gorpfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final" oninput="hesapla()">
-<div class="sonuc" id="conclusion3"></div>  
-    </div>
-    <p class="text 4">Yazılım ve Kur.</p>
-    <div class="veri">
-<input class="input" inputmode="numeric" type="text" id="yazkvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" oninput="hesapla()">
-<input class="input" inputmode="numeric" type="text" id="yazkfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final" oninput="hesapla()">
-<div class="sonuc" id="conclusion4"></div>  
-    </div>
-    <p class="text 5">Yabancı Dil</p>
-    <div class="veri">
-<input class="input" inputmode="numeric" type="text" id="ybnvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" oninput="hesapla()">
-<input class="input" inputmode="numeric" type="text" id="ybnfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final" oninput="hesapla()">
-<div class="sonuc" id="conclusion5"></div>  
-    </div>
-    <p class="text 6">Türk Dili</p>
-    <div class="veri">
-<input class="input" inputmode="numeric" type="text" id="trcvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" oninput="hesapla()">
-<input class="input" inputmode="numeric" type="text" id="trcfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final" oninput="hesapla()">
-<div class="sonuc" id="conclusion6"></div>  
-    </div>
-    <p class="text 7">Tarih</p>
-    <div class="veri">
-<input class="input" inputmode="numeric" type="text" id="trhvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" oninput="hesapla()">
-<input class="input" inputmode="numeric" type="text" id="trhfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final" oninput="hesapla()">
-<div class="sonuc" id="conclusion7"></div>  
-    </div>
+  </div>
+    <div id="lessonarea"></div>
 <div class="add">
-	<button class="addbtn">+ Ders</button>
+	<button class="addbtn" onclick="add()">+ Ders</button>
     </div>
 <div class="btn">
 <button class="clear" onclick="clearElements()">Temizle</button>

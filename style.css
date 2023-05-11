@@ -79,7 +79,7 @@ input{
     border: none;
     color: white;
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 23px;
     border-radius: 5px;
     font-size: medium;
 }
@@ -93,7 +93,7 @@ input{
     background-color: transparent;
     border: 1px solid;
     color: rgb(155, 155, 155);
-    padding: 5px 20px;
+    padding: 9px 22px;
     border-radius: 5px;
     font-size: medium;
     font-weight: bold;

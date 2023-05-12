@@ -13,7 +13,7 @@ function hesapla() {
     var final6 = document.getElementById("trcfinal").value;
     var vize7 = document.getElementById("trhvize").value;
     var final7 = document.getElementById("trhfinal").value;
-    var yuzde1 = vize1 * 0.4 + final1 * 0.6;
+    var yuzde1 = vize * 0.4 + final * 0.6;
     var yuzde2 = vize2 * 0.4 + final2 * 0.6;
     var yuzde3 = vize3 * 0.4 + final3 * 0.6;
     var yuzde4 = vize4 * 0.4 + final4 * 0.6;
@@ -27,7 +27,7 @@ function hesapla() {
     var yuzde5 = yuzde5.toFixed(1);
     var yuzde6 = yuzde6.toFixed(1);
     var yuzde7 = yuzde7.toFixed(1);
-    document.getElementById("conclusion1").innerHTML = yuzde1;
+    document.getElementById("conclusion").innerHTML = yuzde1;
     document.getElementById("conclusion2").innerHTML = yuzde2;
     document.getElementById("conclusion3").innerHTML = yuzde3;
     document.getElementById("conclusion4").innerHTML = yuzde4;

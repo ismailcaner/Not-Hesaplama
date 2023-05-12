@@ -1,6 +1,6 @@
 function hesapla() {
-    var vize1 = document.getElementById("vize1").value;
-    var final1 = document.getElementById("final1").value;
+    var vize1 = document.getElementById("vize.1").value;
+    var final1 = document.getElementById("final.1").value;
     var vize2 = document.getElementById("intpvize").value;
     var final2 = document.getElementById("intpfinal").value;
     var vize3 = document.getElementById("gorpvize").value;
@@ -27,7 +27,7 @@ function hesapla() {
     var yuzde5 = yuzde5.toFixed(1);
     var yuzde6 = yuzde6.toFixed(1);
     var yuzde7 = yuzde7.toFixed(1);
-    document.getElementById("conclusion1").innerHTML = yuzde1;
+    document.getElementById("conclusion.1").innerHTML = yuzde1;
     document.getElementById("conclusion2").innerHTML = yuzde2;
     document.getElementById("conclusion3").innerHTML = yuzde3;
     document.getElementById("conclusion4").innerHTML = yuzde4;

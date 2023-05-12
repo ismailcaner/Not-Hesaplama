@@ -27,7 +27,7 @@ function add() {
     for (var i = 0; i < orijinalOgeler.length; i++) {
         var orijinalOge = orijinalOgeler[i];
         var klonOge = klonOgeler[i];
-        klonOge.setAttribute('id', klonOge.getAttribute('id') + '-' + cloneCounter);
+        klonOge.setAttribute('id', klonOge.getAttribute('id') + cloneCounter);
     }
 
     document.getElementById('lessonarea').appendChild(klon);

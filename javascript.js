@@ -1,6 +1,6 @@
 function hesapla() {
-    var vize1 = document.getElementById("vrtvize").value;
-    var final1 = document.getElementById("vrtfinal").value;
+    var vize1 = document.getElementById("vize").value;
+    var final1 = document.getElementById("final").value;
     var vize2 = document.getElementById("intpvize").value;
     var final2 = document.getElementById("intpfinal").value;
     var vize3 = document.getElementById("gorpvize").value;

@@ -1,3 +1,8 @@
+img{
+    width: 25px;
+    height: 25px;
+    margin: 0px;
+   }
 h3{
     margin: 5px;
 }
@@ -7,26 +12,10 @@ h3{
     cursor:default;
     border-bottom: 1px solid rgb(155, 155, 155);
     margin: 20px;
-}
 
-#lesson{
-    display: none;
 }
-
-textarea{
-    border: 0px;
-    height: 18px;
-    width: 100%;
-    padding:0px;
-    text-align: center;
-    margin: 0px;
-    outline: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-}
-
 input{
-    width: 100%;
+   width: 100%;
     text-align: center;
     margin: 3px;
     border: none;
@@ -38,13 +27,22 @@ input{
     cursor:default;
 }
 
-.inputs{
+.text{
     justify-content: center;
     display: flex;
-    margin: 10px;  
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    cursor:default;
+}
+.veri{
+    justify-content: center;
+    display: flex;
+    
 }
 
 .sonuc{
+    
     height: 32px;
     width: 100%;
     display: flex;
@@ -58,12 +56,34 @@ input{
     border-radius: 5px;
 }
 
-
-.btn{
-    text-align: center;
-    margin: 15px;
+.veri{
+    margin: 10px;
 }
-
+.ders1{
+    width: 250px;
+    height: 25px;
+    text-align: left;
+    border: 1px solid black;
+}
+p.beta{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 15px;
+    text-align: right;
+    font-size: small;
+    font-style: italic;
+    color: rgb(155, 155, 155);
+    font-family: Arial, Helvetica, sans-serif;
+}
+textarea{
+    border: 0px;
+    height: 18px;
+    width: 100%;
+    padding:0px;
+    text-align: center;
+    margin: 0px;
+    outline: none;
+   }
 .clear{
     background-color: rgb(155, 155, 155);
     border:none;
@@ -72,29 +92,30 @@ input{
     padding: 10px 20px;
     border-radius: 5px;
     font-size: medium;
-}
-
+    }
 .save{
     background-color: #0071e3;
     border: none;
     color: white;
     text-align: center;
-    padding: 10px 23px;
+    padding: 10px 20px;
     border-radius: 5px;
     font-size: medium;
-}
-
-
+   }
+.btn{
+    text-align: center;
+    margin: 15px;
+    }
 .add{
     text-align: center;
 }
-
 .addbtn{
     background-color: transparent;
     border: 1px solid;
     color: rgb(155, 155, 155);
-    padding: 9px 22px;
+    padding: 5px 20px;
     border-radius: 5px;
     font-size: medium;
     font-weight: bold;
 }
+

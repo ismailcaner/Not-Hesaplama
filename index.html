@@ -45,7 +45,7 @@ if ('serviceWorker' in navigator) {
     <div class="h3">
             <h3>Not Hesaplama</h3>
 	</div>
-       <textarea class="text 1">Veri Tabanı</textarea>
+       <p class="text 1">Veri Tabanı</p>
     <div class="veri">
 <input class="input" inputmode="numeric" type="text" id="vrtvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" oninput="hesapla()">
 <input class="input" inputmode="numeric" type="text" id="vrtfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final" oninput="hesapla()">
@@ -87,13 +87,12 @@ if ('serviceWorker' in navigator) {
 <input class="input" inputmode="numeric" type="text" id="trhfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final" oninput="hesapla()">
 <div class="sonuc" id="conclusion7"></div>  
     </div>
-<div class="add">
-	<button class="addbtn">+ Ders</button>
-    </div>
+
 <div class="btn">
 <button class="clear" onclick="clearElements()">Temizle</button>
 <button class="save">Kaydet</button>
 </div>
+	
 </body>
 </html>
 

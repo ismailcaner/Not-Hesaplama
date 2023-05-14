@@ -12,25 +12,46 @@ function clearElements() {
   }
 }
 
-//ders ekleme butonu
-var cloneCounter = 1;
+//kaydetme btn
 
-function add() {
-    var divContainer = document.getElementById('lesson');
-    var klon = divContainer.cloneNode(true);
+const inputs = document.querySelectorAll('input');
+const spans = document.querySelectorAll('span');
+const saveButton = document.getElementById('saveButton');
 
-    klon.setAttribute('id', 'lesson' + cloneCounter);
+// Sayfa yüklendiğinde verileri kontrol et ve yükle
+window.addEventListener('DOMContentLoaded', function() {
+  loadSavedData();
+});
 
-    var orijinalOgeler = divContainer.getElementsByTagName('*');
-    var klonOgeler = klon.getElementsByTagName('*');
+// Verileri yükleme işlemi
+function loadSavedData() {
+  const savedData = localStorage.getItem('savedData');
 
-    for (var i = 0; i < orijinalOgeler.length; i++) {
-        var orijinalOge = orijinalOgeler[i];
-        var klonOge = klonOgeler[i];
-        klonOge.setAttribute('id', klonOge.getAttribute('id') + '.' + cloneCounter);
-    }
+  if (savedData) {
+    const data = JSON.parse(savedData);
 
-    document.getElementById('lessonarea').appendChild(klon);
+    inputs.forEach(function(input, index) {
+      const inputKey = `input${index+1}`;
 
-    cloneCounter++;
+      if (inputKey in data) {
+        input.value = data[inputKey];
+        spans[index].textContent = data[inputKey];
+      }
+    });
+  }
 }
+
+// Verileri kaydetme işlemi
+saveButton.addEventListener('click', function() {
+  const data = {};
+
+  inputs.forEach(function(input, index) {
+    const inputKey = `input${index+1}`;
+    data[inputKey] = input.value;
+    spans[index].textContent = input.value;
+  });
+
+  localStorage.setItem('savedData', JSON.stringify(data));
+
+  alert('Veriler kaydedildi.');
+});

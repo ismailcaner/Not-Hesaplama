@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const saveButton = document.getElementById('saveButton');
   const inputs = document.querySelectorAll('input');
   const spans = document.querySelectorAll('span');
-  const saveButton = document.getElementById('saveButton');
 
   // Sayfa yüklendiğinde verileri kontrol et ve yükle
   loadSavedData();

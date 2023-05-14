@@ -14,44 +14,41 @@ function clearElements() {
 
 //kaydetme btn
 
-document.addEventListener('DOMContentLoaded', function() {
-  const saveButton = document.getElementById('saveButton');
-  const inputs = document.querySelectorAll('input');
-  const spans = document.querySelectorAll('span');
+const inputs = document.querySelectorAll('input');
+const spans = document.querySelectorAll('span');
+const saveButton = document.getElementById('saveButton');
+const loadButton = document.getElementById('loadButton');
 
-  // Sayfa yüklendiğinde verileri kontrol et ve yükle
-  loadSavedData();
+saveButton.addEventListener('click', function() {
+  const data = {};
 
-  // Verileri yükleme işlemi
-  function loadSavedData() {
-    const savedData = localStorage.getItem('savedData');
+  // Input değerlerini kaydet
+  inputs.forEach(function(input, index) {
+    data[`input${index+1}`] = input.value;
 
-    if (savedData) {
-      const data = JSON.parse(savedData);
+    // Input değerlerini ilgili spanlara aktar
+    spans[index].textContent = input.value;
+  });
 
-      inputs.forEach(function(input, index) {
-        const inputKey = `input${index+1}`;
+  localStorage.setItem('savedData', JSON.stringify(data));
 
-        if (inputKey in data) {
-          input.value = data[inputKey];
-          spans[index].textContent = data[inputKey];
-        }
-      });
-    }
-  }
+  alert('Veriler kaydedildi.');
+});
 
-  // Verileri kaydetme işlemi
-  saveButton.addEventListener('click', function() {
-    const data = {};
+loadButton.addEventListener('click', function() {
+  const savedData = localStorage.getItem('savedData');
 
+  if (savedData) {
+    const data = JSON.parse(savedData);
+
+    // Input değerlerini yükle ve ilgili spanlara aktar
     inputs.forEach(function(input, index) {
-      const inputKey = `input${index+1}`;
-      data[inputKey] = input.value;
+      input.value = data[`input${index+1}`] || '';
       spans[index].textContent = input.value;
     });
 
-    localStorage.setItem('savedData', JSON.stringify(data));
-
-    alert('Veriler kaydedildi.');
-  });
+    alert('Veriler yüklendi.');
+  } else {
+    alert('Kaydedilmiş veri bulunamadı.');
+  }
 });

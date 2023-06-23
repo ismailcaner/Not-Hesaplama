@@ -1,9 +1,9 @@
 //clear butonu
 function clearElements() {
-  document.getElementsByClassName("sonuc").value= '';
+  document.getElementById('conclusion1').innerHTML = '';
   document.getElementById('vrtvize').value = '';
   document.getElementById('vrtfinal').value = '';
-}
+}}
 
 //save butonu
     function kaydet() {

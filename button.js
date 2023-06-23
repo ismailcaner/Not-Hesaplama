@@ -2,12 +2,7 @@
 function clearElements() {
   document.getElementsByClassName("sonuc").value= '';
   document.getElementById('vrtvize').value = '';
-  document.getElementById('vrtfinal').value = ''; {
-  var elements = document.getElementsByClassName("sonuc");
-  for (var i = 0; i < elements.length; i++) {
-    elements[i].value = "";
-    elements[i].innerHTML = "";
-  }
+  document.getElementById('vrtfinal').value = '';
 }
 
 //save butonu

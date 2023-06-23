@@ -2,8 +2,7 @@
 function clearElements() {
   document.getElementById('vrtvize').value = '';
   document.getElementById('vrtfinal').value = '';
-  var spanElement = document.getElementById('conclusion1');
-  spanElement.parentNode.removeChild(spanElement);
+
 }
 
 //save butonu

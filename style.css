@@ -25,6 +25,7 @@ input{
     background-color: rgb(230, 230, 230);
     outline: none;
     cursor:default;
+    height: 32px;
 }
 
 .text{

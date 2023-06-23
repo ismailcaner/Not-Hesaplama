@@ -38,8 +38,10 @@ input{
 .veri{
     justify-content: center;
     display: flex;
-    
 }
+.katsayı{
+    justify-content: center;
+    display: flex;
 
 .sonuc{
     

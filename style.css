@@ -39,10 +39,12 @@ input{
 .veri{
     justify-content: center;
     display: flex;
+    margiin: 10px;
 }
-.katsay1{
+.katsay{
     justify-content: center;
     display: flex;
+    margin: 10px;
 }
 .sonuc{
     
@@ -59,9 +61,6 @@ input{
     border-radius: 5px;
 }
 
-.veri{
-    margin: 10px;
-}
 .ders1{
     width: 250px;
     height: 25px;

@@ -1,8 +1,13 @@
 //clear butonu
 function clearElements() {
+  var elements = document.getElementsByClassName("sonuc");
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].value = "";
+    elements[i].innerHTML = "";
+  }
+  {
   document.getElementById('vrtvize').value = '';
   document.getElementById('vrtfinal').value = '';
-
 }
 
 //save butonu

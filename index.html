@@ -48,9 +48,9 @@ if ('serviceWorker' in navigator) {
 
 	<div class="katsay1">
 		<p class="text">Vize</p>
-	  <input class="input" inputmode="numeric" type="text" id="vize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="%">
+	  <input class="input" inputmode="numeric" type="text" id="vize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="%" oninput="hesapla()">
 	        <p class="text">Final</p>
-          <input class="input" inputmode="numeric" type="text" id="final" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="%">
+          <input class="input" inputmode="numeric" type="text" id="final" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="%" oninput="hesapla()">
 	</div>
 	
     <div class="veri">

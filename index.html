@@ -47,13 +47,13 @@ if ('serviceWorker' in navigator) {
 	</div>
 
 	<div class="katsay">
-	  <input class="input" inputmode="numeric" type="text" id="vize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize %"  oninput="hesapla()">
-          <input class="input" inputmode="numeric" type="text" id="final" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final %"  oninput="hesapla()">
+	  <input class="input" inputmode="numeric" type="text" id="vize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize %"  value="40" oninput="hesapla()">
+          <input class="input" inputmode="numeric" type="text" id="final" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final %"  value="60" oninput="hesapla()">
 	</div>
 	
     <div class="veri">
-<input class="input" inputmode="numeric" type="text" id="vrtvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" value="40" oninput="hesapla()">
-<input class="input" inputmode="numeric" type="text" id="vrtfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final" valur="60" oninput="hesapla()">
+<input class="input" inputmode="numeric" type="text" id="vrtvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize"  oninput="hesapla()">
+<input class="input" inputmode="numeric" type="text" id="vrtfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final"  oninput="hesapla()">
 <span class="sonuc" id="conclusion1"></span>
     </div>
 <div class="btn">

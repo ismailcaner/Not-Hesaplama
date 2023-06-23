@@ -29,11 +29,8 @@ function clearElements() {
       var veri2 = localStorage.getItem('veri2');
       
       // Kaydedilen verileri yükleme
-      if (veri1 !== null) {
+    
         document.getElementById('input1').value = veri1;
-      }
-      
-      if (veri2 !== null) {
         document.getElementById('input2').value = veri2;
-      }
+      
     }

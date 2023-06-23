@@ -47,11 +47,12 @@ if ('serviceWorker' in navigator) {
 	</div>
 	<p class="viz">Vize</p>
 	<div class="vizekatı>
-	<input class="katsayi" inputmode="numeric" type="text" id="vize" maxlength="3" placeholder="%">
+		<input class="input" inputmode="numeric" type="text" id="vrtvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="%">
 	</div>
 	<p class="fin">Final</p>
 	<div class="finalkatı>
-		<input class"katsayi" inputmode="numeric" type="text" id="final" maxlength="3" placeholder="%">
+		<input class="input" inputmode="numeric" type="text" id="vrtvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="%">
+	</div>
     <div class="veri">
 <input class="input" inputmode="numeric" type="text" id="vrtvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" oninput="hesapla()">
 <input class="input" inputmode="numeric" type="text" id="vrtfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final" oninput="hesapla()">

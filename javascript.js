@@ -4,7 +4,7 @@ function hesapla() {
     var yuzdevize = document.getElementById("vize").value;
     var yuzdefinal = document.getElementById("final").value;
     var yuzde1 = (vize1 * yuzdevize) / 100;
-    var yuzde2 = (vize2 * yuzdevize) /100;
+    var yuzde2 = (vize2 * yuzdefinal) /100;
     var sonuc = yuzde1 + yuzde2;
     var sonuc = sonuc.toFixed(1);
     document.getElementById("conclusion1").innerHTML = sonuc;

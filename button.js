@@ -1,7 +1,7 @@
 //clear butonu
 function clearElements() {
   document.getElementById('vrtvize').value = '';
-  document.getElementById('vrtvize').value = '';
+  document.getElementById('vrtfinal').value = '';
   document.getElementById('conclusion1').value = '';
 }
 

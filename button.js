@@ -30,7 +30,7 @@ function clearElements() {
       
       // Kaydedilen verileri yükleme
     
-        document.getElementById('input1').value = veri1;
-        document.getElementById('input2').value = veri2;
+        document.getElementById('vize').value = veri1;
+        document.getElementById('final').value = veri2;
       
     }

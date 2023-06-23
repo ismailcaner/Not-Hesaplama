@@ -45,13 +45,12 @@ if ('serviceWorker' in navigator) {
     <div class="h3">
             <h3>Not Hesaplama</h3>
 	</div>
-	<p class="viz">Vize</p>
-	<div class"vize">
-	<input class="input" inputmode="numeric" type="text" id="vrtvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="%">
-	</div>
-	<p class="fin">Final</p>
-	<div class"final">
-        <input class="input" inputmode="numeric" type="text" id="vrtfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="%">
+
+	<div class"katsayı">
+		<p class="viz">Vize</p>
+	  <input class="input" inputmode="numeric" type="text" id="vrtvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="%">
+	        <p class="fin">Final</p>
+          <input class="input" inputmode="numeric" type="text" id="vrtfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="%">
 	</div>
     <div class="veri">
 <input class="input" inputmode="numeric" type="text" id="vrtvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" oninput="hesapla()">

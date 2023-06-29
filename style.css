@@ -6,6 +6,8 @@ img{
 
 h3{
     margin: 5px;
+    border: 1px solid rgb(155, 155, 155);
+    boder-radius: 5px;
 }
 
 .h3{

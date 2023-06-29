@@ -1,5 +1,3 @@
-
-
 img{
     width: 25px;
     height: 25px;
@@ -78,6 +76,7 @@ input{
     border-radius: 5px;
     font-size: medium;
 }
+
 .save{
     background-color: #0077ed;
     border:none;
@@ -90,8 +89,13 @@ input{
     align-item: center;
     display: flex;
 }
+
 .btn{
     text-align: center;
     margin: 15px;
 }
 
+.genel{
+     border: 1px solid rgb(155, 155, 155);
+     border radius: 5px ;
+}

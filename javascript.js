@@ -14,18 +14,3 @@ function hesapla() {
       event.preventDefault();
     }
     document.addEventListener('touchmove', preventScroll, { passive: false });
-
-// İlgili input elementlerini seçin
-    const inputElements = document.querySelectorAll('input[type="text"]');
-
-    // Input değerlerini kontrol edin
-    inputElements.forEach(function(inputElement) {
-      inputElement.addEventListener('input', function() {
-        const maxValue = 100;
-        if (parseInt(inputElement.value) > maxValue) {
-          inputElement.value = maxValue; // Değeri 100 ile sınırlayın
-        }
-      });
-    });
-
- 

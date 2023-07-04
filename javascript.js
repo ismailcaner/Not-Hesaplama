@@ -15,12 +15,4 @@ function hesapla() {
     }
     document.addEventListener('touchmove', preventScroll, { passive: false });
 
-    function limitInput(event) {
-      const inputValue = event.target.value;
-      if (inputValue > 100) {
-        event.target.value = 100;
-      }
-    }
-    const inputElement = document.getElementById('vrtvize');
-    const inputElement = document.getElementById('vrtfinal');
-    inputElement.addEventListener('input', limitInput);
+ 

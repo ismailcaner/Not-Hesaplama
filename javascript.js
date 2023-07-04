@@ -10,8 +10,17 @@ function hesapla() {
     document.getElementById("conclusion1").innerHTML = sonuc;
       }
 
-// Yukarı-aşağı kaydırmayı engelleyen bir işlev
     function preventScroll(event) {
       event.preventDefault();
     }
     document.addEventListener('touchmove', preventScroll, { passive: false });
+
+    function limitInput(event) {
+      const inputValue = event.target.value;
+      if (inputValue > 100) {
+        event.target.value = 100;
+      }
+    }
+    const inputElement = document.getElementById('vrtvize');
+    const inputElement = document.getElementById('vrtfinal');
+    inputElement.addEventListener('input', limitInput);

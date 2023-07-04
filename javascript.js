@@ -9,3 +9,9 @@ function hesapla() {
     var sonuc = sonuc.toFixed(1);
     document.getElementById("conclusion1").innerHTML = sonuc;
       }
+
+// Yukarı-aşağı kaydırmayı engelleyen bir işlev
+    function preventScroll(event) {
+      event.preventDefault();
+    }
+    document.addEventListener('touchmove', preventScroll, { passive: false });

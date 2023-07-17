@@ -1,8 +1,8 @@
 //clear butonu
-function clearElements() {
-  document.getElementById('conclusion1').innerHTML = '';
-  document.getElementById('vrtvize').value = '';
-  document.getElementById('vrtfinal').value = '';
+function temizle() {
+  document.getElementById('sonuc').innerHTML = '';
+  document.getElementById('dersvize').value = '';
+  document.getElementById('dersfinal').value = '';
 }
 
 //save butonu

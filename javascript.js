@@ -6,7 +6,7 @@ function hesapla() {
     var yuzde1 = (vize1 * yuzdevize) / 100;
     var yuzde2 = (final1 * yuzdefinal) /100;
     var sonuc = yuzde1 + yuzde2;
-    var sonuc = sonuc.toFixed(1);
+    var sonuc = sonuc.toFixed(0);
     document.getElementById("conclusion1").innerHTML = sonuc;
       }
 

@@ -14,3 +14,19 @@ function hesapla() {
       event.preventDefault();
     }
     document.addEventListener('touchmove', preventScroll, { passive: false });
+
+
+
+ document.addEventListener("DOMContentLoaded", function() {
+        var bildirimButton = document.getElementById("save");
+        var bildirimDiv = document.getElementById("bildirim");
+        
+        bildirimButton.addEventListener("click", function() {
+
+          bildirimDiv.style.display = "block";
+          
+          setTimeout(function() {
+            bildirimDiv.style.display = "none";
+          }, 1000);
+        });
+      });

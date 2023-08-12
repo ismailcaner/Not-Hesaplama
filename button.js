@@ -20,25 +20,31 @@ function temizle() {
         document.getElementById('final').value = veri2;
     }
 
- document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function() {
     var girisAlan = document.getElementById("final");
     var buton = document.getElementById("save");
-    var keyboardIsVisible = false; // Klavye varsayılan olarak kapalıdır
-    
+    var bildirimContainer = document.getElementById("bildirimContainer");
+    var keyboardIsVisible = false;
+
     // Giriş alanına odaklandığında
     girisAlan.addEventListener("focus", function() {
-      keyboardIsVisible = true; // Klavye açıldı
+      keyboardIsVisible = true;
     });
-    
+
     // Giriş alanından çıkıldığında
     girisAlan.addEventListener("blur", function() {
-      keyboardIsVisible = false; // Klavye kapandı
+      keyboardIsVisible = false;
     });
-    
+
     // Butona tıklama olayı
     buton.addEventListener("click", function() {
       if (keyboardIsVisible) {
-        girisAlan.focus(); // Klavye açıksa giriş alanına odaklan
+        girisAlan.focus();
       }
+      bildirimContainer.style.display = "flex";
+      
+      setTimeout(function() {
+        bildirimContainer.style.display = "none";
+      }, 2000);
     });
   });

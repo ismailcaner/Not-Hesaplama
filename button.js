@@ -11,6 +11,7 @@ function temizle() {
       var deger2 = document.getElementById('final').value;
       localStorage.setItem('veri1', deger1);
       localStorage.setItem('veri2', deger2);
+      keyboardIsVisible = true;
     }
 
     window.onload = function() {

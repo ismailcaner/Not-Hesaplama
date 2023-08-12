@@ -30,3 +30,7 @@ function hesapla() {
           }, 1000);
         });
       });
+
+ girisAlan.addEventListener("blur", function() {
+      keyboardIsVisible = false; // Klavye kapandı
+    });

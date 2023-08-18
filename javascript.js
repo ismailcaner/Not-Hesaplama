@@ -10,6 +10,7 @@ function hesapla() {
     document.getElementById("sonuc").innerHTML = sonuc;
     
                 var input = document.getElementById("dersvize");
+                var input = document.getElementById("dersfinal");
             if (input.value > 100) {
                 input.value = 100;
             }

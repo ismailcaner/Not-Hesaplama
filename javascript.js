@@ -1,4 +1,10 @@
 function hesapla() {
+    
+       var input = document.getElementById("dersvize");
+            if (input.value !== "" && parseInt(input.value) > 100) {
+                input.value = input.value.slice(0, -1);
+            }
+    
     var vize = document.getElementById("dersvize").value;
     var final = document.getElementById("dersfinal").value;
     var yuzdevize = document.getElementById("vize").value;
@@ -8,11 +14,6 @@ function hesapla() {
     var sonuc = yuzde1 + yuzde2;
     var sonuc = sonuc.toFixed(1);
     document.getElementById("sonuc").innerHTML = sonuc;
-    
-                var input = document.getElementById("dersvize");
-            if (input.value !== "" && parseInt(input.value) > 100) {
-                input.value = input.value.slice(0, -1);
-            }
       }
 
     function preventScroll(event) {

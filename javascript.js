@@ -9,10 +9,9 @@ function hesapla() {
     var sonuc = sonuc.toFixed(1);
     document.getElementById("sonuc").innerHTML = sonuc;
     
-                var input = document.getElementById("dersvize");
-                var input = document.getElementById("dersfinal");
-            if (input.value > 100) {
-                input.value = 100;
+                var input = document.getElementById("myInput");
+            if (input.value !== "" && parseInt(input.value) > 100) {
+                input.value = input.value.slice(0, -1);
             }
       }
 

@@ -1,10 +1,15 @@
 function hesapla() {
-               var input = document.getElementById("dersvize");
+                          var input = document.getElementById("dersvize");
             var value = input.value.trim();
             
-            if (value !== "" && (parseInt(value) > 100 || parseInt(value) < 1 || value[0] === '0')) {
-                input.value = "";
+            if (value !== "") {
+                if (parseInt(value) < 1) {
+                    input.value = "";
+                } else if (parseInt(value) > 100) {
+                    input.value = value.slice(0, -1);
+                }
             }
+
 
     var vize = document.getElementById("dersvize").value;
     var final = document.getElementById("dersfinal").value;

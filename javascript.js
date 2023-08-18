@@ -1,6 +1,5 @@
 function hesapla() {
                           var input = document.getElementById("dersvize");
-            var value = input.value.trim();
             
             if (value !== "") {
                 if (parseInt(value) < 1) {

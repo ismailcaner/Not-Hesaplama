@@ -8,6 +8,11 @@ function hesapla() {
     var sonuc = yuzde1 + yuzde2;
     var sonuc = sonuc.toFixed(1);
     document.getElementById("sonuc").innerHTML = sonuc;
+    
+                var input = document.getElementById("dersvize");
+            if (input.value > 100) {
+                input.value = 100;
+            }
       }
 
     function preventScroll(event) {

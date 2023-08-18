@@ -1,10 +1,8 @@
 function hesapla() {
-    
-       var input = document.getElementById("dersvize");
+    var input = document.getElementById("dersvize");
             if (input.value !== "" && parseInt(input.value) > 100) {
                 input.value = input.value.slice(0, -1);
-            }
-    
+    }
     var vize = document.getElementById("dersvize").value;
     var final = document.getElementById("dersfinal").value;
     var yuzdevize = document.getElementById("vize").value;
@@ -20,7 +18,6 @@ function hesapla() {
       event.preventDefault();
     }
     document.addEventListener('touchmove', preventScroll, { passive: false });
-
 
 
  document.addEventListener("DOMContentLoaded", function() {

@@ -1,5 +1,5 @@
 function hesapla() {
-                          var input = document.getElementById("dersvize");
+            var input = document.getElementById("dersvize");
             var value = input.value.trim();
             
             if (value !== "") {
@@ -10,6 +10,16 @@ function hesapla() {
                 }
             }
 
+            var input = document.getElementById("dersfinal");
+            var value = input.value.trim();
+            
+            if (value !== "") {
+                if (parseInt(value) < 1) {
+                    input.value = "";
+                } else if (parseInt(value) > 100) {
+                    input.value = value.slice(0, -1);
+                }
+            }
 
     var vize = document.getElementById("dersvize").value;
     var final = document.getElementById("dersfinal").value;

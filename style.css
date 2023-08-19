@@ -5,6 +5,8 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    margim-right:5px;
+    margin-left:5px;
 }
 .genel{
     border: 0px solid rgb(155, 155, 155);

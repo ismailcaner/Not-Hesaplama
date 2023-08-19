@@ -92,7 +92,7 @@ input{
 
 .btn{
     margin: 15px;
-    display:flex;
+    text-align: center;
 }
 
 .save{

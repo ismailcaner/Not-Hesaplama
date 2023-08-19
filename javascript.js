@@ -36,5 +36,3 @@ function hesapla() {
       event.preventDefault();
     }
     document.addEventListener('touchmove', preventScroll, { passive: false });
-
-      });

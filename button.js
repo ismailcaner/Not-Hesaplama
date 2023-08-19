@@ -5,7 +5,7 @@ function temizle() {
   document.getElementById('dersfinal').value = '';
 }
 
-//save butonu
+//save
     function kaydet() {
       var deger1 = document.getElementById('vize').value;
       var deger2 = document.getElementById('final').value;

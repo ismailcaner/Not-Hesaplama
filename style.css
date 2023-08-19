@@ -94,6 +94,7 @@ input{
     text-align: center;
     margin: 15px;
     display:flex;
+    place-items: center;
 }
 
 .save{

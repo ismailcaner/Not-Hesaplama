@@ -9,7 +9,7 @@ function hesapla() {
         } else if (parseInt(value) > 100) {
             input.value = value.slice(0, -1);
         }
-    }
+}
   
     var input = document.getElementById("dersfinal");
     var value = input.value.trim();
@@ -20,7 +20,7 @@ function hesapla() {
         } else if (parseInt(value) > 100) {
             input.value = value.slice(0, -1);
         }
-    }
+}
 
 //girilen değer yok ise sonuç ekranını tamamen temizleme işlemi
     var input1 = document.getElementById('dersvize');
@@ -44,8 +44,7 @@ function hesapla() {
 }
 
 
-
-
+//not kat sayısı kaydetme ve hesaplama işlemi
 function kaydet() {
     // yalnızca 1 ile 100 arası değer girişine izin verme işlemi
             var input = document.getElementById("vize");
@@ -90,14 +89,14 @@ function kaydet() {
                 sonuc1.textContent = "";
             }
             
-    //girilen değerleri önbelleğe kaydetme işlemi
+//girilen değerleri önbelleğe kaydetme işlemi
             var deger1 = document.getElementById('vize').value;
             var deger2 = document.getElementById('final').value;
             localStorage.setItem('veri1', deger1);
             localStorage.setItem('veri2', deger2);
             keyboardIsVisible = true;
-          }
-    //sayfa her yüklendiğinde değerleri tekrar yerlerine yerleştirme işlemi
+}
+//sayfa her yüklendiğinde değerleri tekrar yerlerine yerleştirme işlemi
           window.onload = function() {
             var veri1 = localStorage.getItem('veri1');
             var veri2 = localStorage.getItem('veri2');
@@ -105,10 +104,9 @@ function kaydet() {
               document.getElementById('final').value = veri2;
               keyboardIsVisible = true;
 
-                                //ekrandaki öğlerin hareketini kapatma işlemi
-function preventScroll(event) {
-event.preventDefault();
-}
-document.addEventListener('touchmove', preventScroll, { passive: false });
+//ekrandaki öğlerin hareketini kapatma işlemi
+         function preventScroll(event) 
+         {event.preventDefault();}
+         document.addEventListener('touchmove', preventScroll, { passive: false });
 }
           

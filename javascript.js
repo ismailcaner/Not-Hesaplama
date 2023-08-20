@@ -102,13 +102,12 @@ function kaydet() {
               document.getElementById('vize').value = veri1;
               document.getElementById('final').value = veri2;
               keyboardIsVisible = true;
-          }
 
 
-            
-//ekrandaki öğlerin hareketini kapatma işlemi
+              //ekrandaki öğlerin hareketini kapatma işlemi
 function preventScroll(event) {
 event.preventDefault();
 }
 document.addEventListener('touchmove', preventScroll, { passive: false });
 }
+          }

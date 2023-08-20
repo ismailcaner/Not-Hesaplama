@@ -16,8 +16,8 @@
      <link rel="icon" sizes="192x192" href="icon.png">
      <link rel="icon" sizes="128x128" href="icon.png">
      <link rel="icon" href="rounded-in-photoretrica.png" type="image/png">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     
     <title>Not Hesaplama</title>
@@ -43,25 +43,24 @@ if ('serviceWorker' in navigator) {
 <body>
 <div class="genel">
     <div class="h3">
-            <img src="rounded-in-photoretrica.png">
-	</div>
+<img src="rounded-in-photoretrica.png">
+    </div>
 
-	<div class="katsay">
-	  <input class="input" inputmode="numeric" type="text" id="vize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize %"  oninput="kaydet()" oninput="hesapla()">
-          <input class="input" inputmode="numeric" type="text" id="final" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final %"  oninput="kaydet()" oninput="hesapla()">
-            <!-- <button class="save" id="save" onclick="kaydet()">Kaydet</button> -->
-	</div>
+    <div class="katsay">
+<input class="input" inputmode="numeric" type="text" id="vize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize %"  oninput="kaydet()" oninput="hesapla()">
+<input class="input" inputmode="numeric" type="text" id="final" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final %"  oninput="kaydet()" oninput="hesapla()">
+    </div>
 	
     <div class="veri">
 <input class="input" inputmode="numeric" type="text" id="dersvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" oninput="hesapla()">
 <input class="input" inputmode="numeric" type="text" id="dersfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final"  oninput="hesapla()">
 <span class="sonuc" id="sonuc"></span>
     </div>
-<div class="btn">
+	
+   <div class="btn">
 <button class="clear" onclick="temizle()">Temizle</button>
-<!-- <button class="save" id="save" onclick="kaydet()">Notu kaydet</button> -->
+   </div>
 </div>
-	</div>
 </body>
 </html>
 

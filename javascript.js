@@ -43,7 +43,15 @@ function hesapla() {
     }
 
 
-            
+                  //ekrandaki öğlerin hareketini kapatma işlemi
+function preventScroll(event) {
+event.preventDefault();
+}
+document.addEventListener('touchmove', preventScroll, { passive: false });
+}
+
+
+
 function kaydet() {
     // yalnızca 1 ile 100 arası değer girişine izin verme işlemi
             var input = document.getElementById("vize");
@@ -102,12 +110,4 @@ function kaydet() {
               document.getElementById('vize').value = veri1;
               document.getElementById('final').value = veri2;
               keyboardIsVisible = true;
-
-
-              //ekrandaki öğlerin hareketini kapatma işlemi
-function preventScroll(event) {
-event.preventDefault();
-}
-document.addEventListener('touchmove', preventScroll, { passive: false });
-}
           }

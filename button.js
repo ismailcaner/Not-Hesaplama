@@ -6,12 +6,6 @@ function temizle() {
 }
 //karanlık-aydınlık mod
 function darklight() {
-      const body = document.body;
-      body.classList.toggle('dark-mode');
-
-      const darkModeButton = document.getElementById('dark-mode-button');
-      if (body.classList.contains('dark-mode')) {
-        darkligt.textContent = 'Light';
-      } else {
-        darkligt.textContent = 'Dark';
+      
+        darkligt.textContent = 'aa';
       }

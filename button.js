@@ -4,3 +4,7 @@ function temizle() {
   document.getElementById('dersvize').value = '';
   document.getElementById('dersfinal').value = '';
 }
+//karanlık-aydınlık mod
+function darkligth() {
+
+}

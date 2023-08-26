@@ -7,5 +7,5 @@ function temizle() {
 //karanlık-aydınlık mod
 function darklight() {
       
-        darkligt.textContent = 'aa';
+        darkmod.textContent = 'aa';
       }

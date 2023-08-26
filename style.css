@@ -104,6 +104,9 @@ input{
     margin: 3px;
     align-items: center;
     display: flex;
-
 }
 
+.sonuc::before {
+    content: "Sonuç";
+    color: gray;
+  }

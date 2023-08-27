@@ -4,7 +4,8 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin:15px;
+    margin-rigth:15px;
+    margin-left:15px;
 }
 .genel{
     border: 0px solid rgb(155, 155, 155);

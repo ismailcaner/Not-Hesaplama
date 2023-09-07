@@ -37,18 +37,14 @@ function hesapla() {
     var sonuc = yuzde1 + yuzde2;
     var sonuc = sonuc.toFixed(1);
     document.getElementById("sonuc").innerHTML = sonuc;
+    
+    clear.style.opacity = 1;
   
     } else {
         sonuc.textContent = "";
+        
+        clear.style.opacity = 0.5;
     }
-    
-    if (input1 !=="" || input2 !==""){
-      
-    clear.style.opacity = 1;
-    }
-    else {
-      clear.style.opacity = 0.5;
-      }
 }
 
 

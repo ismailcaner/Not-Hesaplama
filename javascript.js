@@ -1,4 +1,6 @@
 function hesapla() {
+  
+  clear.style.opacity: 1;
 // yalnızca 1 ile 100 arası değer girişine izin verme işlemi
     var input = document.getElementById("dersvize");
     var value = input.value.trim();

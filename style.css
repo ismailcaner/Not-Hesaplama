@@ -46,6 +46,9 @@ input{
     height: 32px;
 }
 
+input:focus{
+    border: 1px solid black;
+
 .text{
     justify-content: center;
     display: flex;

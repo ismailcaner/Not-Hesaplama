@@ -42,12 +42,13 @@ function hesapla() {
         sonuc.textContent = "";
     }
     
-    if (dersvize !=="" || dersfinal !==""){
+    if (vize !=="" || final !==""){
       
     clear.style.opacity = 1;
     }
     else {
       clear.style.opacity = 0.5;
+      }
 }
 
 

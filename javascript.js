@@ -42,7 +42,7 @@ function hesapla() {
         sonuc.textContent = "";
     }
     
-    if (vize !=="" || final !==""){
+    if (input1 !=="" || input2 !==""){
       
     clear.style.opacity = 1;
     }

@@ -41,6 +41,8 @@ function hesapla() {
     } else {
         sonuc.textContent = "";
     }
+    
+    clear.style.opacity = 1;
 }
 
 

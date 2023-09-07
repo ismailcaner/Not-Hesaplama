@@ -84,7 +84,7 @@ input{
 .clear{
     background-color:white;
     border: 1px solid rgb(155, 155, 155);
-    color: rgb(155, 155, 155);
+    color: black;
     text-align:center;
     padding: 10px 20px;
     border-radius: 5px;

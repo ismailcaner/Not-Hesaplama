@@ -27,7 +27,7 @@ function hesapla() {
     var input2 = document.getElementById('dersfinal');
     var sonuc = document.getElementById('sonuc');
   
-    if (input1.value && input2.value) {
+    if (input1.value || input2.value) {
     var vize = document.getElementById("dersvize").value;
     var final = document.getElementById("dersfinal").value;
     var yuzdevize = document.getElementById("vize").value;

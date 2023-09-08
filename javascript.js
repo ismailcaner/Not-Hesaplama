@@ -4,7 +4,7 @@ function hesapla() {
     var value = input.value.trim();
     
     if (value !== "") {
-        if (parseInt(value) < 0) {
+        if (parseInt(value) < 1) {
             input.value = "";
         } else if (parseInt(value) > 100) {
             input.value = value.slice(0, -1);
@@ -15,7 +15,7 @@ function hesapla() {
     var value = input.value.trim();
     
     if (value !== "") {
-        if (parseInt(value) < 0) {
+        if (parseInt(value) < 1) {
             input.value = "";
         } else if (parseInt(value) > 100) {
             input.value = value.slice(0, -1);
@@ -27,7 +27,7 @@ function hesapla() {
     var input2 = document.getElementById('dersfinal');
     var sonuc = document.getElementById('sonuc');
   
-    if (input1.value || input2.value) {
+    if (input1.value && input2.value) {
     var vize = document.getElementById("dersvize").value;
     var final = document.getElementById("dersfinal").value;
     var yuzdevize = document.getElementById("vize").value;

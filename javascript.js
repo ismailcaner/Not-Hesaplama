@@ -4,7 +4,7 @@ function hesapla() {
     var value = input.value.trim();
     
     if (value !== "") {
-        if (parseInt(value) < 1) {
+        if (parseInt(value) < 0) {
             input.value = "";
         } else if (parseInt(value) > 100) {
             input.value = value.slice(0, -1);
@@ -15,7 +15,7 @@ function hesapla() {
     var value = input.value.trim();
     
     if (value !== "") {
-        if (parseInt(value) < 1) {
+        if (parseInt(value) < 0) {
             input.value = "";
         } else if (parseInt(value) > 100) {
             input.value = value.slice(0, -1);

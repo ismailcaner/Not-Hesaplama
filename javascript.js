@@ -45,6 +45,9 @@ function hesapla() {
     }
 }
 
+if (sonuc < 60){
+  sonuc.style.border = 1px solid red;}
+
 
 //not kat sayısı kaydetme ve hesaplama işlemi
 function kaydet() {

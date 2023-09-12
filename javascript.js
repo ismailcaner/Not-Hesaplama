@@ -38,11 +38,13 @@ function hesapla() {
     var sonuc = sonuc.toFixed(1);
     document.getElementById("sonuc").innerHTML = sonuc;
     
-    
-    
     clear.style.opacity = 1;
-  
-    } else {
+
+    } 
+    else if(sonuc < 60){
+      sonuc.style.border = 1px solid red;}
+    
+    else {
         sonuc.textContent = "";
         clear.style.opacity = 0.5;
     }

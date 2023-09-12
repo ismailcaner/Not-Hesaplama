@@ -42,7 +42,7 @@ function hesapla() {
 
     } else {
       sonuc1.textContent = "";
-      clear.style.opacity = 1;
+      clear.style.opacity = 0.5;
     }
 }
 

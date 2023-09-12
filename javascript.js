@@ -43,9 +43,6 @@ function hesapla() {
         sonuc.textContent = "";
         clear.style.opacity = 0.5;
     }
-    
-    if(sonuc < 60){
-      sonuc.style.border= 1px solid red;}
 }
 
 

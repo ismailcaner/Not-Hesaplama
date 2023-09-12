@@ -24,5 +24,5 @@ function hesapla() {
     document.getElementById("sonuc").innerHTML = sonuc;
     
     if( sonuc < 60 ){
-      sonuc.style.border = 1px solid red;}
+      sonuc.style.border = 5px solid red;}
 }

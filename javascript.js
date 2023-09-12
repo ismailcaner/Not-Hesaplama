@@ -39,8 +39,6 @@ function hesapla() {
     document.getElementById("sonuc").innerHTML = sonuc;
     
     clear.style.opacity = 1;
-    if(sonuc < 60){ 
-      sonuc.style.border= 1px solid red;}
     } else {
         sonuc.textContent = "";
         clear.style.opacity = 0.5;

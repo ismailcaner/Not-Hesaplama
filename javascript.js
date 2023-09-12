@@ -40,8 +40,9 @@ function hesapla() {
     
     clear.style.opacity = 1;
 
-    } else if (sonuc < 60){
-        sonuc.style.border = solid red;
+    } else {
+      sonuc1.textContent = "";
+      clear.style.opacity = 1;
     }
 }
 

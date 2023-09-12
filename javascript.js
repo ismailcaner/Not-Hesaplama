@@ -41,7 +41,7 @@ function hesapla() {
     clear.style.opacity = 1;
 
     } else if (sonuc < 60){
-        sonuc.style.border= 1px solid red;
+        sonuc.style.border = solid red;
     }
 }
 

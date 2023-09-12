@@ -42,16 +42,13 @@ function hesapla() {
     
     clear.style.opacity = 1;
   
-    } 
-    
-    if(sonuc < 60){
-      sonuc.style.border: 1 px solid red;}
-    
-    else {
+    } else {
         sonuc.textContent = "";
-        
         clear.style.opacity = 0.5;
     }
+    
+    if(sonuc.value < 60){
+      sonuc.style.border:1 px solid red;}
 }
 
 

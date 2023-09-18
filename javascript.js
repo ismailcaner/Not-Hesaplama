@@ -178,4 +178,3 @@ function dersadi() {
 function preventScroll(event) 
 {event.preventDefault();}
 document.addEventListener('touchmove', preventScroll, { passive: false });
-

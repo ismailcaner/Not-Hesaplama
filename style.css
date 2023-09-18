@@ -38,7 +38,7 @@ input{
 }
 
 input:focus{
-    background-color: lightblue;
+    border: 1px solid black;
 }
 
 .veri{

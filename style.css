@@ -70,7 +70,7 @@ input:focus{
 .clear{
     background-color: rgb(155, 155, 155);
     border: 1px solid rgb(155, 155, 155);
-    color: rgb(0, 0, 0);
+    color: white;
     text-align: center;
     padding: 8.5px 10px;
     border-radius: 5px;

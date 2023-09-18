@@ -34,10 +34,11 @@ input{
     outline: none;
     cursor: default;
     height: 32px;
+    caret-color; transparent;
 }
 
 input:focus{
-    border: 1px solid black;
+    background-color; lightblue;
 }
 
 .veri{

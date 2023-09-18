@@ -4,27 +4,28 @@
      <meta name="apple-mobile-web-app-capable" content="yes">
      <meta name="apple-mobile-web-app-title" content="Not Hesaplama">
      <meta name="apple-mobile-web-app-status-bar-style" content="black">
-     <link href="/pwa/img/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-     <link href="/pwa/img/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
-     <link href="/pwa/img/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+     <link href="rounded-in-photoretrica.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+     <link href="rounded-in-photoretrica.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+     <link href="rounded-in-photoretrica.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
      <link href="/pwa/img/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
      <link href="/pwa/img/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
      <link href="/pwa/img/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
      <link href="/pwa/img/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
      <link rel="apple-touch-icon" sizes="128x128" href="icon.png">
-     <link rel="apple-touch-icon-precomposed" sizes="128x128" href="icon.png">
-     <link rel="icon" sizes="192x192" href="icon.png">
-     <link rel="icon" sizes="128x128" href="icon.png">
+     <link rel="apple-touch-icon-precomposed" sizes="128x128" href="rounded-in-photoretrica.png">
+     <link rel="icon" sizes="192x192" href="rounded-in-photoretrica.png">
+     <link rel="icon" sizes="128x128" href="rounded-in-photoretrica.png">
      <link rel="icon" href="rounded-in-photoretrica.png" type="image/png">
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
     <title>Not Hesaplama</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="stylecss.css">
+    <script src="oninput.js"></script>
     <script src="button.js"></script>
-<link rel="manifest" href="/manifest.json">
+
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
@@ -43,24 +44,63 @@ if ('serviceWorker' in navigator) {
 <body>
 <div class="genel">
     <div class="h3">
-<img src="rounded-in-photoretrica.png">
-    </div>
-
-    <div class="katsay">
-<input class="input" inputmode="numeric" type="text" id="vize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize %"  oninput="kaydet()" oninput="hesapla()">
-<input class="input" inputmode="numeric" type="text" id="final" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final %"  oninput="kaydet()" oninput="hesapla()">
-    </div>
+            <img src="rounded-in-photoretrica.png">
+	</div>
+	<div class="katsay">
+	  <input class="input" inputmode="numeric" type="text" id="vize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize %"  oninput="kaydet()">
+          <input class="input" inputmode="numeric" type="text" id="final" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final %"  oninput="kaydet()">
+		
+	</div>
 	
     <div class="veri">
 <input class="input" inputmode="numeric" type="text" id="dersvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" oninput="hesapla()">
 <input class="input" inputmode="numeric" type="text" id="dersfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final"  oninput="hesapla()">
 <span class="sonuc" id="sonuc"></span>
     </div>
-	
-   <div class="btn">
+<div class="btn">
 <button class="clear" id="clear" onclick="temizle()">Temizle</button>
-   </div>
+<button class="saved" id="openpop">Notu kaydet</button>
 </div>
-</body>
-</html>
 
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    
+    <input type="text" class="dersadi" id="dersadi" placeholder="Ders adı" oninput="dersadi()">
+    <div class="savebtn1">
+      <button id="vazgec" class="vazgec" onclick="vazgec()">Vazgeç</button>
+      <button id="saved" class="savebtn" onclick="veriAktar()">Kaydet</button>
+    </div>
+  </div>
+</div>
+
+<div class="duzenleFormDiv" id="duzenleFormDiv">
+<div id="duzenleForm" class="duzenleForm" style="display: none;">
+  <div class="duzenleForm1">
+  <input class="duzeninput1" id="duzenleDersadi" placeholder="Ders Adı" >
+  <input class="duzeninput2" id="duzenleDersvize" inputmode="numeric" type="text" id="dersfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" oninput="duzenleHesap()">
+  <input class="duzeninput2" id="duzenleDersfinal" inputmode="numeric" type="text" id="dersfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final" oninput="duzenleHesap()">
+  <span class="duzenspan" id="duzenSonuc" ></span>
+</div>
+  <div class="duzenleKaydet">
+    <button id="duzenleVazgec" class="duzenleVazgec" onclick="duzenleVazgec()">Vazgeç</button>
+    <button id="duzenleKaydet" class="duzenleKaydetbtn">Düzenle</button>
+  </div>
+</div>
+</div>
+
+<div class="table" id="table">
+<table>
+  <tr>
+    <td class="baslık">Ders</td>
+    <td class="baslık">Vize</td>
+    <td class="baslık">Final</td>
+    <td class="baslık">Ort.</td>
+    <td class="baslık" colspan="2">İşlem</td>
+  </tr>
+    <tbody class="tablogovdesi" id="tabloGovdesi"></tbody>
+  </div>
+</div>
+ 
+</body> 
+</html>

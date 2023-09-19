@@ -8,18 +8,17 @@ img{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     cursor:default;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .genel{
-    border: 1px solid black;
-    border-radius: 5px;
     position: sticky;
-    top: 20px;
+    top: 0px;
     background-color: white;
-    padding-bottom: 3px;
     padding-left: 5px;
     padding-right: 5px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(155, 155, 155);
 }
 
 input{
@@ -30,11 +29,10 @@ input{
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255 255 255);
     outline: none;
     cursor: default;
     height: 32px;
-    caret-color: transparent;
 }
 
 input:focus{
@@ -68,9 +66,9 @@ input:focus{
 }
 
 .clear{
-    background-color: grey;
-    border: 1px solid rgb(155, 155, 155);
-    color: white;
+    background-color: white;
+    border: 1px solid rgb(155, 155, 155);;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 8.5px 10px;
     border-radius: 5px;
@@ -130,8 +128,8 @@ input:focus{
 }
 
 body{
-    margin: 10px;
-    margin-top: 20px; 
+    margin: 0px;
+    
 }
 
 .list{
@@ -192,10 +190,12 @@ table {
     font-size: medium;
     font-weight: bold;
     color: rgb(155, 155, 155);
-    border-bottom: 1px solid rgb(155, 155, 155);
+    border-bottom: none;
     padding-bottom: 5px;
-    padding-top: 25px;
-    border-top: 1px solid rgb(155, 155, 155);
+}
+
+.baslık1{
+    display: none;
 }
 
 td{
@@ -207,13 +207,12 @@ td{
 }
 
 .fa-trash{
-    color: #9f9f9f;
+    color: rgb(155, 155, 155);
 }
 
 .fa-edit{
-    color: #9f9f9f;
+    color: rgb(155, 155, 155);
 }
-
 .duzenspan{
     width: 22%;
     display: flex;
@@ -305,6 +304,12 @@ td{
 th:first-child, td:first-child {
     width: 100px;
   }
+
+.tablogovdesi{
+    margin-left: 10px;
+}
+
+
 .tablogovdesi{
     margin-left: 10px;
 }

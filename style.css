@@ -207,7 +207,11 @@ td{
 }
 
 .fa-trash{
-    color: black;
+    color: #9f9f9f;
+}
+
+.fa-edit{
+    color: #9f9f9f;
 }
 
 .duzenspan{

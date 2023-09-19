@@ -22,8 +22,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
     <title>Not Hesaplama</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="stylecss.css">
+    <script src="oninput.js"></script>
     <script src="button.js"></script>
 
 <script>
@@ -47,8 +47,8 @@ if ('serviceWorker' in navigator) {
             <img src="rounded-in-photoretrica.png">
 	</div>
 	<div class="katsay">
-	  <input class="input" inputmode="numeric" type="text" id="vize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize(etki oranı)"  oninput="kaydet()">
-          <input class="input" inputmode="numeric" type="text" id="final" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final(etki oranı)"  oninput="kaydet()">
+	  <input class="input" inputmode="numeric" type="text" id="vize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize %"  oninput="kaydet()">
+          <input class="input" inputmode="numeric" type="text" id="final" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final %"  oninput="kaydet()">
 		
 	</div>
 	
@@ -88,6 +88,7 @@ if ('serviceWorker' in navigator) {
   </div>
 </div>
 </div>
+</div>
 
 <div class="table" id="table">
 <table>
@@ -100,7 +101,7 @@ if ('serviceWorker' in navigator) {
   </tr>
     <tbody class="tablogovdesi" id="tabloGovdesi"></tbody>
   </div>
-</div>
+
  
 </body> 
 </html>

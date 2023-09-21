@@ -43,10 +43,16 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
 var veriler = JSON.parse(localStorage.getItem("veriler")) || [];
 var siradakiRenkIndex = veriler.length % 2; // İlk satırı beyaz yapmak için
 var renkler = ["white", "lightgray"];
+
+function uygulaRenkler() {
+    var satirlar = document.querySelectorAll("#tabloGovdesi tr");
+    satirlar.forEach(function (satir, index) {
+        satir.style.backgroundColor = veriler[index] ? veriler[index].arkaPlanRenk : renkler[index % renkler.length];
+    });
+}
 
 function veriAktar() {
     var input1 = document.getElementById("dersadi").value;
@@ -79,7 +85,6 @@ function veriAktar() {
     silButon.addEventListener("click", function () {
         var satir = this.parentNode.parentNode;
         tablo.deleteRow(satir.rowIndex - 1);
-       
 
         var silinecekVeri = {
             veri1: input1,
@@ -93,8 +98,14 @@ function veriAktar() {
         });
 
         localStorage.setItem("veriler", JSON.stringify(veriler));
+
+        // Sıradaki renk indeksini güncelle
+        siradakiRenkIndex = (siradakiRenkIndex + 1) % renkler.length;
+
+        // Sayfayı yenilemeden renkleri güncelle
+        uygulaRenkler();
     });
-    
+
     cell5.appendChild(silButon);
 
     var cell6 = newRow.insertCell(5);
@@ -121,8 +132,7 @@ function veriAktar() {
 
         var duzenleKaydet = document.getElementById("duzenleKaydet");
         duzenleKaydet.addEventListener("click", function (event) {
-        duzenleFormDiv.style.display = "none";
-        location.reload();
+            duzenleFormDiv.style.display = "none";
 
             var yeniDersadi = duzenleDersadi.value;
             var yeniDersvize = duzenleDersvize.value;
@@ -139,40 +149,44 @@ function veriAktar() {
             veriler[index].veri2 = yeniDersvize;
             veriler[index].veri3 = yeniDersfinal;
             veriler[index].veri4 = yeniDerssonuc;
-            
-                
-    
+
             localStorage.setItem("veriler", JSON.stringify(veriler));
 
-            duzenleFormDiv.style.display = "none";
+            // Sıradaki renk indeksini güncelle
+            siradakiRenkIndex = (siradakiRenkIndex + 1) % renkler.length;
+
+            // Sayfayı yenilemeden renkleri güncelle
+            uygulaRenkler();
         });
     });
     cell6.appendChild(duzenleButon);
-    
+
+    var yeniVeri = {
+        veri1: input1,
+        veri2: input2,
+        veri3: input3,
+        veri4: input4,
+        arkaPlanRenk: renkler[siradakiRenkIndex]
+    };
+
+    veriler.push(yeniVeri);
+    localStorage.setItem("veriler", JSON.stringify(veriler));
+
+    // Sıradaki renk indeksini güncelle
+    siradakiRenkIndex = (siradakiRenkIndex + 1) % renkler.length;
+
+    // Sayfayı yenilemeden renkleri güncelle
+    uygulaRenkler();
+
     document.getElementById("dersadi").value = "";
     document.getElementById("dersvize").value = "";
     document.getElementById("dersfinal").value = "";
     document.getElementById("sonuc").innerHTML = "";
 
-    var veri = {
-        veri1: input1,
-        veri2: input2,
-        veri3: input3,
-        veri4: input4
-    };
-    veriler.push(veri);
-    localStorage.setItem("veriler", JSON.stringify(veriler));
-
     duzenleForm.style.display = "none";
 }
 
 window.onload = function () {
-    var veri1 = localStorage.getItem('veri1');
-    var veri2 = localStorage.getItem('veri2');
-    document.getElementById('vize').value = veri1;
-    document.getElementById('final').value = veri2;
-    keyboardIsVisible = true;
-
     if (veriler.length > 0) {
         var tablo = document.getElementById("tabloGovdesi");
 
@@ -190,7 +204,6 @@ window.onload = function () {
             silButon.addEventListener("click", function () {
                 var satir = this.parentNode.parentNode;
                 tablo.deleteRow(satir.rowIndex - 1);
-               
 
                 var silinecekVeri = {
                     veri1: veri.veri1,
@@ -202,9 +215,15 @@ window.onload = function () {
                     return JSON.stringify(veri) !== JSON.stringify(silinecekVeri);
                 });
                 localStorage.setItem("veriler", JSON.stringify(veriler));
+
+                // Sıradaki renk indeksini güncelle
+                siradakiRenkIndex = (siradakiRenkIndex + 1) % renkler.length;
+
+                // Sayfayı yenilemeden renkleri güncelle
+                uygulaRenkler();
             });
             hucre5.appendChild(silButon);
-            
+
             var cell6 = satir.insertCell(5);
             var duzenleButon = document.createElement("i");
             duzenleButon.className = "fas fa-edit";
@@ -224,15 +243,13 @@ window.onload = function () {
                 duzenleDersfinal.value = hucreler[2].innerHTML;
                 duzenleDerssonuc.innerHTML = hucreler[3].innerHTML;
 
-
                 var duzenleForm = document.getElementById("duzenleForm");
                 duzenleForm.style.display = "block";
 
                 var duzenleKaydet = document.getElementById("duzenleKaydet");
                 duzenleKaydet.addEventListener("click", function (event) {
                     duzenleFormDiv.style.display = "none";
-                    location.reload();
-                    
+
                     var yeniDersadi = duzenleDersadi.value;
                     var yeniDersvize = duzenleDersvize.value;
                     var yeniDersfinal = duzenleDersfinal.value;
@@ -248,21 +265,19 @@ window.onload = function () {
                     veriler[index].veri2 = yeniDersvize;
                     veriler[index].veri3 = yeniDersfinal;
                     veriler[index].veri4 = yeniDerssonuc;
-                    
-               
+
                     localStorage.setItem("veriler", JSON.stringify(veriler));
 
+                    // Sıradaki renk indeksini güncelle
+                    siradakiRenkIndex = (siradakiRenkIndex + 1) % renkler.length;
+
+                    // Sayfayı yenilemeden renkleri güncelle
+                    uygulaRenkler();
                 });
             });
             cell6.appendChild(duzenleButon);
-            
         });
 
-    document.getElementById("dersadi").value = "";
-    document.getElementById("dersvize").value = "";
-    document.getElementById("dersfinal").value = "";
-    document.getElementById("sonuc").innerHTML = "";
-    
-   }
- }
-
+        uygulaRenkler();
+    }
+}

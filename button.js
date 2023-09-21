@@ -153,24 +153,36 @@ function veriAktar() {
     
             localStorage.setItem("veriler", JSON.stringify(veriler));
 
-            duzenleFormDiv.style.display = "none";
+            // Sıradaki renk indeksini güncelle
+            siradakiRenkIndex = (siradakiRenkIndex + 1) % renkler.length;
+
+            // Sayfayı yenilemeden renkleri güncelle
+            uygulaRenkler();
         });
     });
     cell6.appendChild(duzenleButon);
-    
-    document.getElementById("dersadi").value = "";
-    document.getElementById("dersvize").value = "";
-    document.getElementById("dersfinal").value = "";
-    document.getElementById("sonuc").innerHTML = "";
 
     var veri = {
         veri1: input1,
         veri2: input2,
         veri3: input3,
-        veri4: input4
+        veri4: input4,
+        arkaPlanRenk: renkler[siradakiRenkIndex]
     };
+
     veriler.push(veri);
     localStorage.setItem("veriler", JSON.stringify(veriler));
+
+    // Sıradaki renk indeksini güncelle
+    siradakiRenkIndex = (siradakiRenkIndex + 1) % renkler.length;
+
+    // Sayfayı yenilemeden renkleri güncelle
+    uygulaRenkler();
+
+    document.getElementById("dersadi").value = "";
+    document.getElementById("dersvize").value = "";
+    document.getElementById("dersfinal").value = "";
+    document.getElementById("sonuc").innerHTML = "";
 
     duzenleForm.style.display = "none";
 }
@@ -211,6 +223,12 @@ window.onload = function () {
                     return JSON.stringify(veri) !== JSON.stringify(silinecekVeri);
                 });
                 localStorage.setItem("veriler", JSON.stringify(veriler));
+            });
+            // Sıradaki renk indeksini güncelle
+                siradakiRenkIndex = (siradakiRenkIndex + 1) % renkler.length;
+
+                // Sayfayı yenilemeden renkleri güncelle
+                uygulaRenkler();
             });
             hucre5.appendChild(silButon);
             
@@ -261,12 +279,18 @@ window.onload = function () {
                
                     localStorage.setItem("veriler", JSON.stringify(veriler));
 
+                    // Sıradaki renk indeksini güncelle
+                    siradakiRenkIndex = (siradakiRenkIndex + 1) % renkler.length;
+
+                    // Sayfayı yenilemeden renkleri güncelle
+                    uygulaRenkler();
                 });
             });
             cell6.appendChild(duzenleButon);
-            
         });
-
+        
+    uygulaRenkler();
+        
     document.getElementById("dersadi").value = "";
     document.getElementById("dersvize").value = "";
     document.getElementById("dersfinal").value = "";

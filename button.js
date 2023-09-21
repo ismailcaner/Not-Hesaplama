@@ -264,16 +264,12 @@ window.onload = function () {
             cell6.appendChild(duzenleButon);
             
         });
-// Sıradaki renk indeksini kullanarak arka plan rengini belirle
-    newRow.style.backgroundColor = renkler[siradakiRenkIndex];
-    // Sıradaki renk indeksini güncelle
-    siradakiRenkIndex = (siradakiRenkIndex + 1) % renkler.length;
-
 
     document.getElementById("dersadi").value = "";
     document.getElementById("dersvize").value = "";
     document.getElementById("dersfinal").value = "";
     document.getElementById("sonuc").innerHTML = "";
 
-
 }
+}
+

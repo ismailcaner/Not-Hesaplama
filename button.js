@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 var veriler = JSON.parse(localStorage.getItem("veriler")) || [];
 var siradakiRenkIndex = veriler.length % 2; // İlk satırı beyaz yapmak için
-var veriler = ["white", "lightgray"];
+var renkler = ["white", "lightgray"];
 
 function veriAktar() {
     var input1 = document.getElementById("dersadi").value;
@@ -100,7 +100,7 @@ function veriAktar() {
             return JSON.stringify(veri) !== JSON.stringify(silinecekVeri);
         });
 
-        localStorage.setItem("veriler", JSON.stringify(veriler));
+        localStorage.setItem("veriler","renkler" JSON.stringify(renkler),(veriler));
     });
     
     cell5.appendChild(silButon);

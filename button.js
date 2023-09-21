@@ -187,6 +187,12 @@ function veriAktar() {
 }
 
 window.onload = function () {
+    var veri1 = localStorage.getItem('veri1');
+    var veri2 = localStorage.getItem('veri2');
+    document.getElementById('vize').value = veri1;
+    document.getElementById('final').value = veri2;
+    keyboardIsVisible = true;
+    
     if (veriler.length > 0) {
         var tablo = document.getElementById("tabloGovdesi");
 

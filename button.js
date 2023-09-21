@@ -57,8 +57,6 @@ function uygulaRenkler() {
 }
 
 // Sayfa yenilendiğinde renkleri geri yükle
-window.onload = function () {
-    uygulaRenkler();
 
 function veriAktar() {
     var input1 = document.getElementById("dersadi").value;
@@ -185,6 +183,7 @@ function veriAktar() {
 }
 
 window.onload = function () {
+    uygulaRenkler();
     var veri1 = localStorage.getItem('veri1');
     var veri2 = localStorage.getItem('veri2');
     document.getElementById('vize').value = veri1;

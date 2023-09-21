@@ -210,7 +210,7 @@ td{
     text-align: center;
     overflow: hidden;
     background-color: lightgrey;    /*yeni*/
-    border-bottom: 1px solid white;/*yeni*/
+    border-bottom: 2px solid white;/*yeni*/
 }
 
 .fa-trash{

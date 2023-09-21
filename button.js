@@ -100,7 +100,7 @@ function veriAktar() {
             return JSON.stringify(veri) !== JSON.stringify(silinecekVeri);
         });
 
-        localStorage.setItem("veriler","renkler" JSON.stringify(renkler),(veriler));
+        localStorage.setItem("veriler"JSON.stringify(veriler));
     });
     
     cell5.appendChild(silButon);

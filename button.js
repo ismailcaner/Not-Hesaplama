@@ -69,6 +69,7 @@ function veriAktar() {
 
     modal.style.display = "none";
     openpop.style.opacity = 0.5;
+    clear.style.opacity= 0.5;
 
     var tablo = document.getElementById("tabloGovdesi");
     var newRow = tablo.insertRow(tablo.rows.length);

@@ -167,7 +167,6 @@ function veriAktar() {
         veri2: input2,
         veri3: input3,
         veri4: input4,
-        arkaPlanRenk: renkler[siradakiRenkIndex]
     };
 
     veriler.push(veri);

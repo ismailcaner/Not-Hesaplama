@@ -45,18 +45,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 var veriler = JSON.parse(localStorage.getItem("veriler")) || [];
-var siradakiRenkIndex = 0;
+var siradakiRenkIndex = veriler.length % 2; // İlk satırı beyaz yapmak için
 var renkler = ["white", "lightgray"];
 
-// Sayfa yüklendiğinde renkleri uygula
 function uygulaRenkler() {
     var satirlar = document.querySelectorAll("#tabloGovdesi tr");
     satirlar.forEach(function (satir, index) {
-        satir.style.backgroundColor = renkler[index % renkler.length];
+        satir.style.backgroundColor = veriler[index] ? veriler[index].arkaPlanRenk : renkler[index % renkler.length];
     });
 }
 
-// Sayfa yenilendiğinde renkleri geri yükle
 
 function veriAktar() {
     var input1 = document.getElementById("dersadi").value;

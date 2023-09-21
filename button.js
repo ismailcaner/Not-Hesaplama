@@ -57,11 +57,7 @@ function veriAktar() {
     if (input1 === "") {
         return false;
     }
-    // Sıradaki renk indeksini kullanarak arka plan rengini belirle
-    tr.style.backgroundColor = renkler[siradakiRenkIndex];
-    // Sıradaki renk indeksini güncelle
-    siradakiRenkIndex = (siradakiRenkIndex + 1) % renkler.length;
-    
+
     modal.style.display = "none";
     openpop.style.opacity = 0.5;
 

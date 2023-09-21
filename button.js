@@ -161,7 +161,7 @@ function veriAktar() {
     });
     cell6.appendChild(duzenleButon);
 
-    var yeniVeri = {
+    var veri = {
         veri1: input1,
         veri2: input2,
         veri3: input3,
@@ -169,7 +169,7 @@ function veriAktar() {
         arkaPlanRenk: renkler[siradakiRenkIndex]
     };
 
-    veriler.push(yeniVeri);
+    veriler.push(veri);
     localStorage.setItem("veriler", JSON.stringify(veriler));
 
     // Sıradaki renk indeksini güncelle

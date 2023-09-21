@@ -82,6 +82,8 @@ function veriAktar() {
     cell3.innerHTML = input3;
     cell4.innerHTML = input4;
 
+    newRow.classList.add("fade-in");
+
     var cell5 = newRow.insertCell(4);
     var silButon = document.createElement("i");
     silButon.className = "fas fa-trash";

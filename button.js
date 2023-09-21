@@ -265,11 +265,25 @@ window.onload = function () {
             
         });
 
+// Sıradaki renk indeksini kullanarak arka plan rengini belirle
+    newRow.style.backgroundColor = renkler[siradakiRenkIndex];
+    // Sıradaki renk indeksini güncelle
+    siradakiRenkIndex = (siradakiRenkIndex + 1) % renkler.length;
+
     document.getElementById("dersadi").value = "";
     document.getElementById("dersvize").value = "";
     document.getElementById("dersfinal").value = "";
     document.getElementById("sonuc").innerHTML = "";
+    
+        var veri = {
+        veri1: input1,
+        veri2: input2,
+        veri3: input3,
+        veri4: input4
+    };
+    veriler.push(veri);
+    localStorage.setItem("veriler", JSON.stringify(veriler));
 
-}
-
+   }
+ }
 

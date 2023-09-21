@@ -46,14 +46,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 var veriler = JSON.parse(localStorage.getItem("veriler")) || [];
 var siradakiRenkIndex = veriler.length % 2; // İlk satırı beyaz yapmak için
-var renkler = ["white", "lightgray"];
+var veriler = ["white", "lightgray"];
 
-function uygulaRenkler() {
-    var satirlar = document.querySelectorAll("#tabloGovdesi tr");
-    satirlar.forEach(function (satir, index) {
-        satir.style.backgroundColor = veriler[index] ? veriler[index].arkaPlanRenk : renkler[index % renkler.length];
-    });
-}
+
 
 
 function veriAktar() {

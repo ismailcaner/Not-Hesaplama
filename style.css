@@ -1,23 +1,22 @@
-body {
+body{
     opacity: 0;
     transition: opacity 1s ease;  /*yeni*/
     margin: 0;
 }
-
-img {
+img{
     width: 35px;
     height: 35px;
     margin: 0px;
 }
 
-.h3 {
+.h3{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     cursor:default;
     padding-top: 15px;
 }
 
-.genel {
+.genel{
     position: sticky;
     top: 0px;
     background-color: white;
@@ -27,7 +26,7 @@ img {
     border-bottom: 1px solid rgb(155, 155, 155);
 }
 
-input {
+input{
     width: 100%;
     text-align: center;
     margin: 3px;
@@ -39,27 +38,27 @@ input {
     outline: none;
     cursor: default;
     height: 32px;
-    caret-color: transparent;
+    caret-color: transparent;  /* yeni */
 }
 
-input:focus {
+input:focus{
     border: 1px solid black;
 }
 
-.veri {
+.veri{
     justify-content: center;
     display: flex;
     margin: 10px;
 }
 
-.katsay {
+.katsay{
     justify-content: center;
     display: flex;
     margin: 10px;
     place-items: center;
 }
 
-.sonuc {
+.sonuc{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -72,7 +71,7 @@ input:focus {
     border-radius: 5px;
 }
 
-.clear {
+.clear{
     background-color: white;
     border: 1px solid rgb(155, 155, 155);;
     color: rgb(0, 0, 0);
@@ -83,10 +82,10 @@ input:focus {
     width: 100%;
     margin-right: 5px;
     opacity: 0.5;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;     /*yeni*/
 }
 
-.saved {
+.saved{
     background-color: #0077ed;
     border: 1px solid #0077ed;
     color: white;
@@ -96,10 +95,10 @@ input:focus {
     width: 100%;
     margin-left: 5px;
     opacity: 0.5;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;  /*yeni*/
 }
 
-.savebtn {
+.savebtn{
     background-color: #0077ed;
     border: 1px solid #0077ed;
     color: white;
@@ -110,10 +109,10 @@ input:focus {
     opacity: 0.5;
     width: 100%;
     justify-content: center;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;   /*yeni*/
 }
 
-.vazgec {
+.vazgec{
     margin-right: 5px;
     background-color: white;
     border: 1px solid rgb(155, 155, 155);
@@ -125,23 +124,21 @@ input:focus {
     text-align: center;
 }
 
-.savebtn1 {
+.savebtn1{
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
 
-.btn {
+.btn{
     padding: 10px;
     padding-top: 0;
     display: flex;
 }
 
-body {
-    margin: 0px;
-}
 
-.list {
+
+.list{
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
@@ -150,7 +147,7 @@ body {
     color: rgb(150 150 150)  
 }
 
-.dersadi {
+.dersadi{
     padding: 0px;
     margin: 0px;
 }
@@ -163,10 +160,7 @@ table {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.table {
-    padding-left: 10px;
-    padding-right: 10px;
-}
+
 
 .modal {
     display: none;
@@ -199,7 +193,7 @@ table {
     cursor: pointer;
 }
 
-.baslık {
+.baslık{
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     font-weight: bold;
@@ -207,26 +201,26 @@ table {
     border-bottom: 1px solid rgb(155, 155, 155);
     padding-bottom: 10px;
     padding-top: 10px; 
+    background-color: white;
 }
 
-td {
+td{
     padding-bottom: 10px;
     padding-top: 10px;
     text-align: center;
     overflow: hidden;
-     background-color: lightgrey;
-    border-bottom: 1px solid white;
+    background-color: lightgrey;    /*yeni*/
+    border-bottom: 1px solid white;/*yeni*/
 }
 
-.fa-trash {
+.fa-trash{
     color: rgb(155, 155, 155);
 }
 
-.fa-edit {
+.fa-edit{
     color: rgb(155, 155, 155);
 }
-
-.duzenspan {
+.duzenspan{
     width: 22%;
     display: flex;
     border: 1px solid darkgrey;
@@ -243,7 +237,7 @@ td {
     padding-right: 3px;
 }
 
-.duzenleForm {
+.duzenleForm{
     background-color: white;
     max-width: 400px;
     margin-top: 50%;
@@ -254,12 +248,13 @@ td {
     padding: 5px;
 }
 
-.duzenleForm1 {
+.duzenleForm1{
+    
     display: flex;
     align-items: center;
 }
 
-.duzenleFormDiv {
+.duzenleFormDiv{
     display: none;
     position: fixed;
     top: 0;
@@ -270,7 +265,7 @@ td {
     backdrop-filter: blur(2px);
 }
 
-.duzeninput1 {
+.duzeninput1{
     width: 100%;
     margin-top: 10px;
     border: 1px solid darkgrey;
@@ -278,14 +273,14 @@ td {
     margin-left: 10px;
 }
 
-.duzeninput2 {
+.duzeninput2{
     width: 20%;
     margin-top: 10px;
     border: 1px solid darkgrey;
     background: white;
 }
 
-.duzenleKaydetbtn {
+.duzenleKaydetbtn{
     margin: 10px;
     background-color: #0077ed;
     border: 1px solid #0077ed;
@@ -297,7 +292,7 @@ td {
     text-align: center;
 }
 
-.duzenleVazgec {
+.duzenleVazgec{
     margin: 10px;
     background-color: white;
     border: 1px solid rgb(155, 155, 155);
@@ -309,27 +304,29 @@ td {
     text-align: center;
 }
 
-.duzenleKaydet {
+.duzenleKaydet{
     display: flex;
     justify-content: center;
 }
 
 th:first-child, td:first-child {
     width: 100px;
-}
+  }
 
-.tablogovdesi {
+.tablogovdesi{
     margin-left: 10px;
 }
 
-.tablogovdesi {
+
+.tablogovdesi{
     margin-left: 10px;
 }
 
-.fade-in {
+.fade-in {   /* yeni */
     animation: fadeIn 0.5s ease-in-out; 
 }
-@keyframes fadeIn {
+
+@keyframes fadeIn {  /* yeni */
     0% {
         opacity: 0;
     }

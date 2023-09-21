@@ -140,6 +140,10 @@ function veriAktar() {
             veriler[index].veri2 = yeniDersvize;
             veriler[index].veri3 = yeniDersfinal;
             veriler[index].veri4 = yeniDerssonuc;
+            
+                // Sıradaki renk indeksini kullanarak arka plan rengini belirle
+    newRow.style.backgroundColor = renkler[siradakiRenkIndex];
+
 
             localStorage.setItem("veriler", JSON.stringify(veriler));
 
@@ -148,12 +152,9 @@ function veriAktar() {
     });
     cell6.appendChild(duzenleButon);
     
-    // Sıradaki renk indeksini kullanarak arka plan rengini belirle
-    newRow.style.backgroundColor = renkler[siradakiRenkIndex];
 
     // Sıradaki renk indeksini güncelle
     siradakiRenkIndex = (siradakiRenkIndex + 1) % renkler.length;
-
 
     document.getElementById("dersadi").value = "";
     document.getElementById("dersvize").value = "";
@@ -255,14 +256,16 @@ window.onload = function () {
                     veriler[index].veri3 = yeniDersfinal;
                     veriler[index].veri4 = yeniDerssonuc;
 
+           // Sıradaki renk indeksini kullanarak arka plan rengini belirle
+    newRow.style.backgroundColor = renkler[siradakiRenkIndex];
+    
                     localStorage.setItem("veriler", JSON.stringify(veriler));
 
                 });
             });
             cell6.appendChild(duzenleButon);
             
-            // Sıradaki renk indeksini kullanarak arka plan rengini belirle
-    newRow.style.backgroundColor = renkler[siradakiRenkIndex];
+ 
 
     // Sıradaki renk indeksini güncelle
     siradakiRenkIndex = (siradakiRenkIndex + 1) % renkler.length;

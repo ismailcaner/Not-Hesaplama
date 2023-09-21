@@ -271,5 +271,5 @@ window.onload = function () {
     document.getElementById("sonuc").innerHTML = "";
 
 }
-}
+
 

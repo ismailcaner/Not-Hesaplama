@@ -45,9 +45,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 var veriler = JSON.parse(localStorage.getItem("veriler")) || [];
-
 var siradakiRenkIndex = 0;
 var renkler = ["white", "lightgray"];
+
+// Sayfa yüklendiğinde renkleri uygula
+function uygulaRenkler() {
+    var satirlar = document.querySelectorAll("#tabloGovdesi tr");
+    satirlar.forEach(function (satir, index) {
+        satir.style.backgroundColor = renkler[index % renkler.length];
+    });
+}
+
+// Sayfa yenilendiğinde renkleri geri yükle
+window.onload = function () {
+    uygulaRenkler();
 
 function veriAktar() {
     var input1 = document.getElementById("dersadi").value;

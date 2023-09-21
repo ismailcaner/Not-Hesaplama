@@ -46,6 +46,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 var veriler = JSON.parse(localStorage.getItem("veriler")) || [];
 
+var siradakiRenkIndex = 0;
+var renkler = ["white", "lightgray"];
+
 function veriAktar() {
     var input1 = document.getElementById("dersadi").value;
     var input2 = document.getElementById("dersvize").value;
@@ -144,6 +147,13 @@ function veriAktar() {
         });
     });
     cell6.appendChild(duzenleButon);
+    
+    // Sıradaki renk indeksini kullanarak arka plan rengini belirle
+    newRow.style.backgroundColor = renkler[siradakiRenkIndex];
+
+    // Sıradaki renk indeksini güncelle
+    siradakiRenkIndex = (siradakiRenkIndex + 1) % renkler.length;
+
 
     document.getElementById("dersadi").value = "";
     document.getElementById("dersvize").value = "";
@@ -250,6 +260,13 @@ window.onload = function () {
                 });
             });
             cell6.appendChild(duzenleButon);
+            
+            // Sıradaki renk indeksini kullanarak arka plan rengini belirle
+    newRow.style.backgroundColor = renkler[siradakiRenkIndex];
+
+    // Sıradaki renk indeksini güncelle
+    siradakiRenkIndex = (siradakiRenkIndex + 1) % renkler.length;
+
         });
 
         document.getElementById("dersadi").value = "";

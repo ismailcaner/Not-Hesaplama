@@ -223,7 +223,7 @@ window.onload = function () {
                     return JSON.stringify(veri) !== JSON.stringify(silinecekVeri);
                 });
                 localStorage.setItem("veriler", JSON.stringify(veriler));
-            });
+            
             // Sıradaki renk indeksini güncelle
                 siradakiRenkIndex = (siradakiRenkIndex + 1) % renkler.length;
 

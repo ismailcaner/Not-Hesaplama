@@ -275,15 +275,6 @@ window.onload = function () {
     document.getElementById("dersfinal").value = "";
     document.getElementById("sonuc").innerHTML = "";
     
-        var veri = {
-        veri1: input1,
-        veri2: input2,
-        veri3: input3,
-        veri4: input4
-    };
-    veriler.push(veri);
-    localStorage.setItem("veriler", JSON.stringify(veriler));
-
    }
  }
 

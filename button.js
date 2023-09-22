@@ -61,7 +61,7 @@ function veriAktar() {
     var input1 = document.getElementById("dersadi").value;
     var input2 = document.getElementById("dersvize").value;
     var input3 = document.getElementById("dersfinal").value;
-    var input4 = document.getElementById("sonuc").innerHTML;
+    var input4 = parseFloat(document.getElementById("sonuc").innerHTML);
 
     if (input1 === "") {
         return false;
@@ -91,6 +91,12 @@ function veriAktar() {
     cell4.innerHTML = input4;
 
     newRow.classList.add("fade-in");
+    
+    if (input4 < 60) {
+        cell4.style.color = "red";
+    } else {
+        cell4.style.color = "black";
+    }
 
     var cell5 = newRow.insertCell(4);
     var silButon = document.createElement("i");

@@ -100,7 +100,7 @@ function hesapla() {
         var sonuc = sonuc.toFixed(1);
         document.getElementById("sonuc").innerHTML = sonuc;
         
-        sonuc.style.color = sonuc < 60 ? 'red' : 'black';
+        document.getElementById("sonuc").style.color = sonuc < 60 ? 'red' : 'black';
         clear.style.opacity = 1;
 
         

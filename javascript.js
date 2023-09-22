@@ -99,6 +99,8 @@ function hesapla() {
         var sonuc = yuzde1 + yuzde2;
         var sonuc = sonuc.toFixed(1);
         document.getElementById("sonuc").innerHTML = sonuc;
+        
+        sonuc.style.color = result < 60 ? 'red' : 'black';
         clear.style.opacity = 1;
 
         

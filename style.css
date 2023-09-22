@@ -94,8 +94,9 @@ input:focus{
     border-radius: 5px;
     font-size: medium;
     width: 100%;
-    margin-left: 5px;
-    opacity: 0.5;
+    margin-left: 3px
+    margin-right: 3px
+    opacity: 0.2;
     transition: opacity 0.5s ease;  /*yeni*/
 }
 

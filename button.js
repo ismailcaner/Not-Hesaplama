@@ -66,6 +66,13 @@ function veriAktar() {
     if (input1 === "") {
         return false;
     }
+    
+    if (input4 < 60){
+      sonuc.style.color= "red";
+      }
+    else {
+      sonuc.style.color= "black";
+      }
 
     modal.style.display = "none";
     openpop.style.opacity = 0.2;

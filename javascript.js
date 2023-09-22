@@ -60,7 +60,7 @@ function hesapla() {
         if ( value !=="" || value1 !=="") {
             openpop.style.opacity = 1;}
             else if ( value === "" || value1 === ""){
-                openpop.style.opacity =0.5;
+                openpop.style.opacity =0.2;
             }
       // yalnızca 1 ile 100 arası değer girişine izin verme işlemi
         var input = document.getElementById("dersvize");

@@ -82,7 +82,8 @@ input:focus{
     width: 100%;
     margin-right: 5px;
     opacity: 0.5;
-    transition: opacity 0.5s ease;     /*yeni*/
+    transition: opacity 0.5s ease;
+    display:none;     /*yeni*/
 }
 
 .saved{

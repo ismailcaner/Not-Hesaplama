@@ -53,13 +53,13 @@ if ('serviceWorker' in navigator) {
 	</div>
 	
     <div class="veri">
-<input class="input" inputmode="numeric" type="text" id="dersvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" oninput="hesapla()">
+<input class="input" inputmode="numeric" autocomplete="off" type="text" id="dersvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" oninput="hesapla()">
 <input class="input" inputmode="numeric" type="text" id="dersfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final"  oninput="hesapla()">
 <span class="sonuc" id="sonuc"></span>
     </div>
 <div class="btn">
 <button class="clear" id="clear" onclick="temizle()">Temizle</button>
-<button class="saved" id="openpop">+ Notu kaydet</button>
+<button class="saved" id="openpop">Notu kaydet</button>
 </div>
 
 

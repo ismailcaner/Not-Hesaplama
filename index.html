@@ -47,13 +47,13 @@ if ('serviceWorker' in navigator) {
             <img src="rounded-in-photoretrica.png">
 	</div>
 	<div class="katsay">
-	  <input class="input" inputmode="numeric" type="text" id="vize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize(etki oranı)" onclick="moveCursorToEnd(this) oninput="kaydet()">
-          <input class="input" inputmode="numeric" type="text" id="final" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final(etki oranı)" onclick="moveCursorToEnd(this) oninput="kaydet()">
+	  <input class="input" inputmode="numeric" type="text" id="vize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize(etki oranı)" onclick="moveCursorToEnd(this)" oninput="kaydet()">
+          <input class="input" inputmode="numeric" type="text" id="final" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final(etki oranı)" onclick="moveCursorToEnd(this)" oninput="kaydet()">
 	</div>
 	
     <div class="veri">
-<input class="input" inputmode="numeric" autocomplete="off" type="text" id="dersvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" onclick="moveCursorToEnd(this) oninput="hesapla()">
-<input class="input" inputmode="numeric" type="text" id="dersfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final" onclick="moveCursorToEnd(this) oninput="hesapla()">
+<input class="input" inputmode="numeric" autocomplete="off" type="text" id="dersvize" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" onclick="moveCursorToEnd(this)" oninput="hesapla()">
+<input class="input" inputmode="numeric" type="text" id="dersfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final" onclick="moveCursorToEnd(this)" oninput="hesapla()">
 <span class="sonuc" id="sonuc"></span>
     </div>
 <div class="btn">
@@ -76,8 +76,8 @@ if ('serviceWorker' in navigator) {
 <div id="duzenleForm" class="duzenleForm" style="display: none;">
   <div class="duzenleForm1">
   <input class="duzeninput1" id="duzenleDersadi" placeholder="Ders Adı" >
-  <input class="duzeninput2" id="duzenleDersvize" inputmode="numeric" type="text" id="dersfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" onclick="moveCursorToEnd(this) oninput="duzenleHesap()">
-  <input class="duzeninput2" id="duzenleDersfinal" inputmode="numeric" type="text" id="dersfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final" onclick="moveCursorToEnd(this) oninput="duzenleHesap()">
+  <input class="duzeninput2" id="duzenleDersvize" inputmode="numeric" type="text" id="dersfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Vize" onclick="moveCursorToEnd(this" oninput="duzenleHesap()">
+  <input class="duzeninput2" id="duzenleDersfinal" inputmode="numeric" type="text" id="dersfinal" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Final" onclick="moveCursorToEnd(this)" oninput="duzenleHesap()">
   <span class="duzenspan" id="duzenSonuc" ></span>
 </div>
   <div class="duzenleKaydet">

@@ -68,7 +68,7 @@ function veriAktar() {
     }
 
     modal.style.display = "none";
-    openpop.style.opacity = 0.5;
+    openpop.style.opacity = 0.2;
     clear.style.opacity= 0.5;
 
     var tablo = document.getElementById("tabloGovdesi");

@@ -180,3 +180,8 @@ function dersadi() {
 function preventScroll(event) 
 {event.preventDefault();}
 document.addEventListener('touchmove', preventScroll, { passive: false });
+
+function moveCursorToEnd(inputElement) {
+    var length = inputElement.value.length;
+    inputElement.setSelectionRange(length, length);
+}

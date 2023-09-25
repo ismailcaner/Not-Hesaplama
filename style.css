@@ -314,7 +314,11 @@ td{
 
 th:first-child, td:first-child {
     width: 100px;
-  }
+}
+
+tr td:nth-last-child(3) {
+    font-weight: bold;
+}
 
 .tablogovdesi{
     margin-left: 10px;

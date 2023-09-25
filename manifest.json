@@ -1,17 +1,29 @@
 {
+ "short_name": "Not Hesaplama",
   "name": "Not Hesaplama",
-  "short_name": "Not Hesaplama",
+  "description": "Notlarınızı hızlıca hesaplayın ve kaydedin.",
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "start_url": "/",
+  "start_URL": "/",
   "icons": [
     {
-      
       "src": "rounded-in-photoretrica.png",
-      "sizes": "1024x1024",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "rounded-in-photoretrica.pngg",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "rounded-in-photoretrica.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "theme_color": "white",
-  "background_color": "white",
-  "start_url": "/",
-  "display": "standalone",
-  "orientation": "portrait-primary"
+  ]
 }

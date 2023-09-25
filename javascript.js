@@ -1,5 +1,5 @@
- //not kat sayısı kaydetme ve hesaplama işlemi
- function kaydet() {
+//not kat sayısı kaydetme ve hesaplama işlemi
+function kaydet() {
     // yalnızca 1 ile 100 arası değer girişine izin verme işlemi
             var input = document.getElementById("vize");
             var value = input.value.trim();
@@ -37,6 +37,8 @@
             var sonuc = yuzde1 + yuzde2;
             var sonuc = sonuc.toFixed(1);
             document.getElementById("sonuc").innerHTML = sonuc;
+
+            document.getElementById("sonuc").style.color = sonuc < 60 ? 'red' : 'black';
           
             } else {
                 sonuc.textContent = "";
@@ -157,6 +159,8 @@ function hesapla() {
             var sonuc = yuzde1 + yuzde2;
             var sonuc = sonuc.toFixed(1);
             document.getElementById("duzenSonuc").innerHTML = sonuc;
+
+            document.getElementById("duzenSonuc").style.color = sonuc < 60 ? 'red' : 'black';
         
             } else {
                 duzenSonuc.textContent = "";
@@ -185,3 +189,4 @@ function moveCursorToEnd(inputElement) {
     var length = inputElement.value.length;
     inputElement.setSelectionRange(length, length);
 }
+

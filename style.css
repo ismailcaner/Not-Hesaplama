@@ -242,13 +242,14 @@ td{
 
 .duzenleForm{
     background-color: white;
+    width: 90%;
     max-width: 400px;
-    margin-top: 50%;
-    margin-left: 10px;
-    margin-right: 10px;
-    position: relative;
     border-radius: 5px;
     padding: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .duzenleForm1{

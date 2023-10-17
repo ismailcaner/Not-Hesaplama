@@ -42,7 +42,7 @@ input{
 }
 
 input:focus{
-    border: 1px solid black;
+   background-color: rgb(225 225 225);
 }
 
 .veri{

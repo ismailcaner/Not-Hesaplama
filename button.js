@@ -7,6 +7,17 @@ function temizle() {
       document.getElementById('dersfinal').value = '';
     }
     
+    document.addEventListener('click', function (event) {
+            var inputs = document.querySelectorAll('input');
+
+            inputs.forEach(function (input) {
+                // Eğer tıklanan element input değilse, inputtan çık.
+                if (event.target !== input) {
+                    input.blur();
+                }
+            });
+        });
+    
     function duzenleVazgec(){
     
         duzenleFormDiv.style.display = "none";

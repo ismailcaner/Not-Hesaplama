@@ -87,7 +87,6 @@ function duzenleHesap() {
                 duzenSonuc.textContent = "";
             }
         }
-        }
     
 function dersadi() {
     const deger1 = document.getElementById("dersadi").value;

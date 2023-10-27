@@ -44,6 +44,8 @@ function cache(){
     localStorage.setItem('veri2', deger2);
     keyboardIsVisible = true;
 }
+
+
 //------------üst kısaltma fonksiyonlar------------//
 function kaydet() {
      sifirYuz()
@@ -54,9 +56,11 @@ function kaydet() {
 function hesapla() {
     var input = document.getElementById("dersvize");
     var input1 = document.getElementById("dersfinal");
-        if ( input !=="" || input1 !=="") {
+        var value = input.value.trim();
+        var value1 = input1.value.trim();
+        if ( value !=="" || value1 !=="") {
             openpop.style.opacity = 1;}
-            else if ( input === "" || input1 === ""){
+            else if ( value === "" || value1 === ""){
                 openpop.style.opacity =0.2;
             }
 
@@ -66,26 +70,7 @@ function hesapla() {
 
 function duzenleHesap() {
         sifirYuz()
-                 var input1 = document.getElementById('duzenleDersvize');
-            var input2 = document.getElementById('duzenleDersfinal');
-            var sonuc = document.getElementById('duzenSonuc');
-          
-            if (input1.value || input2.value) {
-            var vize = document.getElementById("duzenleDersvize").value;
-            var final = document.getElementById("duzenleDersfinal").value;
-            var yuzdevize = document.getElementById("vize").value;
-            var yuzdefinal = document.getElementById("final").value;
-            var yuzde1 = (vize * yuzdevize) / 100;
-            var yuzde2 = (final * yuzdefinal) /100;
-            var sonuc = yuzde1 + yuzde2;
-            var sonuc = sonuc.toFixed(1);
-            document.getElementById("duzenSonuc").innerHTML = sonuc;
-
-            document.getElementById("duzenSonuc").style.color = sonuc < 60 ? 'red' : 'black';
-        
-            } else {
-                duzenSonuc.textContent = "";
-            }
+        islemler()
         }
     
 function dersadi() {

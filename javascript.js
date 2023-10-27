@@ -17,8 +17,8 @@ function sifirYuz() {
     }
 
 function islemler() {
-    var input1 = document.getElementById('vize');
-    var input2 = document.getElementById('final');
+    var input1 = document.getElementById('dersvize');
+    var input2 = document.getElementById('dersfinal');
     var sonuc = document.getElementById('sonuc');
     if (input1.value || input2.value) {
     var vize = document.getElementById("dersvize").value;

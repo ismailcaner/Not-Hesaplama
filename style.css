@@ -90,7 +90,7 @@ input:focus{
 .saved{
     background-color: #292929;
     border: 1px solid #292929;
-    color: white;
+    color: #E9E9E9;
     padding: 8.5px 10px;
     border-radius: 5px;
     font-size: medium;
@@ -104,7 +104,7 @@ input:focus{
 .savebtn{
     background-color: #292929;
     border: 1px solid #292929;
-    color: white;
+    color: #E9E9E9;
     padding: 8.5px 10px;
     border-radius: 5px;
     font-size: medium;

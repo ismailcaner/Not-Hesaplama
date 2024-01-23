@@ -52,7 +52,8 @@ function islem2(){
     var sonuc = yuzde1 + yuzde2;
     var sonuc = sonuc.toFixed(1);
     document.getElementById("duzenSonuc").innerHTML = sonuc;
-    document.getElementById("duzenSonuc").style.color = sonuc < 60 ? 'red' : 'black';
+   var tableRow = sonucElement.closest('tr');
+    tableRow.style.backgroundColor = sonuc < 60 ? 'red' : 'black';
 
     } else {
         duzenSonuc.textContent = "";

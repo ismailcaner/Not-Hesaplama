@@ -30,8 +30,7 @@ function islemler() {
     var sonuc = yuzde1 + yuzde2;
     var sonuc = sonuc.toFixed(1);
     document.getElementById("sonuc").innerHTML = sonuc;
-     var tableRow = sonucElement.closest('tr');
-    tableRow.style.backgroundColor = sonuc < 60 ? 'red' : 'black';
+   document.getElementById("sonuc").style.color = sonuc < 60 ? 'red' : 'black';
 
     } else {
         sonuc.textContent = "";
@@ -52,9 +51,8 @@ function islem2(){
     var yuzde2 = (final * yuzdefinal) /100;
     var sonuc = yuzde1 + yuzde2;
     var sonuc = sonuc.toFixed(1);
-    document.getElementById("duzenSonuc").innerHTML = sonuc;
-   var tableRow = sonucElement.closest('tr');
-    tableRow.style.backgroundColor = sonuc < 60 ? 'red' : 'black';
+     document.getElementById("duzenSonuc").innerHTML = sonuc;
+    document.getElementById("duzenSonuc").style.color = sonuc < 60 ? 'red' : 'black';
 
     } else {
         duzenSonuc.textContent = "";

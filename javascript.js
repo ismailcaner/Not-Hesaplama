@@ -30,7 +30,8 @@ function islemler() {
     var sonuc = yuzde1 + yuzde2;
     var sonuc = sonuc.toFixed(1);
     document.getElementById("sonuc").innerHTML = sonuc;
-    document.getElementById("sonuc").style.color = sonuc < 60 ? 'red' : 'black';
+     var tableRow = sonucElement.closest('tr');
+    tableRow.style.backgroundColor = sonuc < 60 ? 'red' : 'black';
 
     } else {
         sonuc.textContent = "";

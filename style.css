@@ -331,11 +331,11 @@ tr td:nth-last-child(3) {
     margin-left: 10px;
 }
 
-.fade-in {   /* yeni */
+.fade-in { 
     animation: fadeIn 0.5s ease-in-out; 
 }
 
-@keyframes fadeIn {  /* yeni */
+@keyframes fadeIn { 
     0% {
         opacity: 0;
     }
